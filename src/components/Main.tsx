@@ -1,6 +1,6 @@
 const Main = () => {
     return <div>
-        <p>Hello</p>
+        <p>Now, it's working as per expectation.</p>
     </div>
 }
 
