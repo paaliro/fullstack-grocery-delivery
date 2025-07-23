@@ -1,8 +1,10 @@
+import Main from "./components/main"
 function App() {
 
   return (
-    <p>Hi, it's working.
-    </p>
+    <>
+      <Main/>
+    </>
   )
 }
 
