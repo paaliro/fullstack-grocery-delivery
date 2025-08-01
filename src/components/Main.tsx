@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import BestSellers from "./BestSellers";
 import Category from "./Category";
 
 const Main = () => {
@@ -6,6 +7,7 @@ const Main = () => {
         <div>
             <Banner />
             <Category />
+            <BestSellers />
         </div>
     )
 
