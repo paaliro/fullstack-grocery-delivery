@@ -10,7 +10,7 @@ const Main = () => {
                     <a href="#" className="group hidden md:flex items-center gap-2 px-9 py-3 cursor-pointer text-[#364152]" data-discover="true">Explore deals
                         <img src="/images/black_arrow_icon.svg" alt="arrow-img" />
                     </a>
-                </div>
+                </div> 
             </div>
         </div>
     )
