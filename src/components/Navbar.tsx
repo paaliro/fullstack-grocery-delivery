@@ -1,7 +1,7 @@
 const Navbar = () => {
     return (
         <div className="w-full">
-            <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-4 md:px-22 w-full border-b-1 border-b-gray-300">
+            <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-6 md:px-22 w-full border-b-1 border-b-gray-300">
                 <img src="/images/logo.png" alt="brand-logo" className="w-20 h-12 md:h-18 md:w-27 cursor-pointer" />
                 <div className="md:hidden flex gap-6">
                     <div className="relative inline-block">
