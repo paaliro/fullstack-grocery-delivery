@@ -6,4 +6,4 @@ const BestSellers = () => {
     </div>
 }
 
-export default BestSellers;
+export default BestSellers; 
