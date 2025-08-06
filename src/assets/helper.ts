@@ -41,3 +41,11 @@ export const categoriesData = [
     text: "Grains & Cereals",
   },
 ];
+
+export const stars = [
+  '/images/updated-svg/star_icon.svg',
+  '/images/updated-svg/star_icon.svg',
+  '/images/updated-svg/star_icon.svg',
+  '/images/updated-svg/star_icon.svg',
+  '/images/updated-svg/star_dull_icon.svg',
+]

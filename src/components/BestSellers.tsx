@@ -1,3 +1,5 @@
+import { stars } from "../assets/helper";
+
 const BestSellers = () => {
     return <section className="px-6 md:px-24 mt-14 md:mt-18 mb-4 md:mb-5 py-20">
         <div className="">
@@ -11,8 +13,10 @@ const BestSellers = () => {
                         <div>
                             <p>Vegetables</p>
                             <p>Potato 500g</p>
-                            <div>
-                                <img src="" alt="star-img" />
+                            <div className="flex gap-0.5 py-1">
+                                {stars.map((src, index) => (
+                                    <img key={index} src={src} alt="star-img" />
+                                ))}
                             </div>
                         </div>
                         <div></div>
