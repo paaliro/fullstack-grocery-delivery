@@ -11,6 +11,9 @@ const BestSellers = () => {
                         <div>
                             <p>Vegetables</p>
                             <p>Potato 500g</p>
+                            <div>
+                                <img src="" alt="star-img" />
+                            </div>
                         </div>
                         <div></div>
                     </div>
