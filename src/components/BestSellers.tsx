@@ -7,8 +7,8 @@ const BestSellers = () => {
 
             {/* <div className="border-1 border-[#e1e3e6] rounded-md grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"> */}
             <div className="border-1 border-[#e1e3e6] rounded-md my-10 w-fit">
-                <div className="w-fit px-4 py-4">
-                    <img src="/images/best-sellers/bakery_image.png" alt="potato-img" className="max-w-36" />
+                <div className="w-fit px-4 py-2">
+                    <img src="/images/best-sellers/bakery_image.png" alt="potato-img" className="max-w-40 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
                     <div className="">
                         <div>
                             <p className="text-gray-500/60 text-sm">Bakery</p>
@@ -20,10 +20,14 @@ const BestSellers = () => {
                                 <p className="text-gray-500/60 text-sm">(4)</p>
                             </div>
 
-                            <div>
-                                <p className="text-xl font-semibold">₹35
-                                    <span className="text-sm"> ₹40</span>
+                            <div className="flex justify-between pt-3">
+                                <p className="text-xl font-semibold text-[#feca65]">₹35
+                                    <span className="text-sm text-gray-500/60 line-through px-1">₹40</span>
                                 </p>
+                                <button className="flex gap-2 border-1 border-[#feca65] px-2 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] font-normal cursor-pointer">
+                                    <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-4" />
+                                    Add
+                                </button>
                             </div>
                         </div>
                         <div></div>
