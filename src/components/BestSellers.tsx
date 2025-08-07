@@ -7,16 +7,23 @@ const BestSellers = () => {
 
             {/* <div className="border-1 border-[#e1e3e6] rounded-md grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"> */}
             <div className="border-1 border-[#e1e3e6] rounded-md my-10 w-fit">
-                <div className="w-fit px-3 py-2">
-                    <img src="/images/best-sellers/potato_image_1.png" alt="potato-img" className="w-28" />
+                <div className="w-fit px-4 py-4">
+                    <img src="/images/best-sellers/bakery_image.png" alt="potato-img" className="max-w-36" />
                     <div className="">
                         <div>
-                            <p>Vegetables</p>
-                            <p>Potato 500g</p>
-                            <div className="flex gap-0.5 py-1">
+                            <p className="text-gray-500/60 text-sm">Bakery</p>
+                            <p className="font-medium">Brown Bread 400g</p>
+                            <div className="flex gap-0.5">
                                 {stars.map((src, index) => (
-                                    <img key={index} src={src} alt="star-img" />
+                                    <img key={index} src={src} alt="star-img" className="w-4" />
                                 ))}
+                                <p className="text-gray-500/60 text-sm">(4)</p>
+                            </div>
+
+                            <div>
+                                <p className="text-xl font-semibold">₹35
+                                    <span className="text-sm"> ₹40</span>
+                                </p>
                             </div>
                         </div>
                         <div></div>
