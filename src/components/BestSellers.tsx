@@ -7,12 +7,12 @@ const BestSellers = () => {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {bestSellersContent.map((data, index) => (
-                    <div key={index} className="border-1 border-[#e1e3e6] rounded-md my-6 w-fit">
-                        <div className="w-fit px-1 md:px-4 py-2">
+                    <div key={index} className="border-1 border-[#e1e3e6] rounded-md my-4 w-fit">
+                        <div className="px-4 md:px-4 py-2">
                             <div className="flex justify-center">
                                 <img src={data.imgPath} alt="potato-img" className="max-w-28 md:max-w-44 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
                             </div>
-                            <div className="">
+                            <div>
                                 <div>
                                     <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>
                                     <p className="font-medium text-sm md:text-lg">{data.productName}</p>
@@ -24,11 +24,11 @@ const BestSellers = () => {
                                     </div>
 
                                     <div className="flex justify-between pt-3">
-                                        <p className="text-xl font-semibold text-[#feca65]">₹{data.actualPrice}
-                                            <span className="text-sm text-gray-500/60 line-through px-1">₹{data.oldPrice}</span>
+                                        <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">₹{data.actualPrice}
+                                            <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">₹{data.oldPrice}</span>
                                         </p>
-                                        <button className="flex gap-2 border-1 border-[#feca65] px-2 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] font-normal cursor-pointer">
-                                            <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-4" />
+                                        <button className="flex gap-0.5 md:gap-2 border-1 text-xs md:text-lg border-[#feca65] px-1 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] font-normal cursor-pointer">
+                                            <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-3 md:w-4" />
                                             Add
                                         </button>
                                     </div>
@@ -40,34 +40,7 @@ const BestSellers = () => {
                 ))}
             </div>
 
-            {/* <div className="border-1 border-[#e1e3e6] rounded-md my-6 w-fit">
-                <div className="w-fit px-4 py-2">
-                    <img src="/images/best-sellers/bakery_image.png" alt="potato-img" className="max-w-40 md:max-w-45 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
-                    <div className="">
-                        <div>
-                            <p className="text-gray-500/60 text-sm">Bakery</p>
-                            <p className="font-medium">Brown Bread 400g</p>
-                            <div className="flex gap-0.5">
-                                {stars.map((src, index) => (
-                                    <img key={index} src={src} alt="star-img" className="w-4" />
-                                ))}
-                                <p className="text-gray-500/60 text-sm">(4)</p>
-                            </div>
 
-                            <div className="flex justify-between pt-3">
-                                <p className="text-xl font-semibold text-[#feca65]">₹35
-                                    <span className="text-sm text-gray-500/60 line-through px-1">₹40</span>
-                                </p>
-                                <button className="flex gap-2 border-1 border-[#feca65] px-2 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] font-normal cursor-pointer">
-                                    <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-4" />
-                                    Add
-                                </button>
-                            </div>
-                        </div>
-                        <div></div>
-                    </div>
-                </div>
-            </div> */}
         </div>
     </section>
 }
