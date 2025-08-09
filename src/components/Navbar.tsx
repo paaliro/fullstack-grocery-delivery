@@ -2,7 +2,7 @@ const Navbar = () => {
     return (
         <div className="w-full">
             <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-6 md:px-22 w-full border-b-1 border-b-gray-300">
-                <img src="/images/logo.png" alt="brand-logo" className="w-20 h-12 md:h-18 md:w-27 cursor-pointer" />
+                <img src="/images/logo.png" alt="brand-logo" className="w-20 h-12 md:w-20 cursor-pointer" />
                 <div className="md:hidden flex gap-6">
                     <div className="relative inline-block">
                         <button className="absolute -top-1.5 right-0 left-5 bg-[#fdb81d] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>

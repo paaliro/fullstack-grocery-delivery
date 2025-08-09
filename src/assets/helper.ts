@@ -87,3 +87,26 @@ export const bestSellersContent = [
     oldPrice: 140,
   },
 ];
+
+export const bannerTwoContent = [
+  {
+    imgPath: "/images/updated-svg/delivery_truck_icon.svg",
+    title: "Fastest Delivery",
+    text: "Groceries delivered in under 30 minutes.",
+  },
+  {
+    imgPath: "/images/updated-svg/leaf_icon.svg",
+    title: "Freshness Guaranteed",
+    text: "Fresh produce straight from the source.",
+  },
+  {
+    imgPath: "/images/updated-svg/coin_icon.svg",
+    title: "Affordable Prices",
+    text: "Quality groceries at unbeatable prices.",
+  },
+  {
+    imgPath: "/images/updated-svg/trust_icon.svg",
+    title: "Trusted by Thousands",
+    text: "Loved by 10,000+ happy customers.",
+  },
+];
