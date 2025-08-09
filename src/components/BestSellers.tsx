@@ -3,14 +3,14 @@ import { bestSellersContent, stars } from "../assets/helper";
 const BestSellers = () => {
     return <section className="px-6 md:px-24 mt-14 md:mt-16 mb-4 md:mb-5">
         <div className="">
-            <h1 className="text-2xl md:text-3xl font-medium text-[#364152]">Best Sellers</h1>
+            <h1 className="text-2xl md:text-3xl font-medium text-[#364152] mb-6 md:mb-8">Best Sellers</h1>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                 {bestSellersContent.map((data, index) => (
-                    <div key={index} className="border-1 border-[#e1e3e6] rounded-md my-4 w-fit">
+                    <div key={index} className="border-1 border-[#e1e3e6] rounded-md">
                         <div className="px-4 md:px-4 py-2">
                             <div className="flex justify-center">
-                                <img src={data.imgPath} alt="potato-img" className="max-w-28 md:max-w-44 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
+                                <img src={data.imgPath} alt="potato-img" className="max-w-28 md:max-w-36 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
                             </div>
                             <div>
                                 <div>
@@ -23,7 +23,7 @@ const BestSellers = () => {
                                         <p className="text-gray-500/60 text-sm">(4)</p>
                                     </div>
 
-                                    <div className="flex justify-between pt-3">
+                                    <div className="flex justify-between items-baseline pt-3">
                                         <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">₹{data.actualPrice}
                                             <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">₹{data.oldPrice}</span>
                                         </p>
