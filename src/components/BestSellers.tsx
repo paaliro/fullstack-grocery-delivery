@@ -9,14 +9,16 @@ const BestSellers = () => {
                 {bestSellersContent.map((data, index) => (
                     <div key={index} className="border-1 border-[#e1e3e6] rounded-md my-6 w-fit">
                         <div className="w-fit px-1 md:px-4 py-2">
-                            <img src={data.imgPath} alt="potato-img" className="max-w-28 md:max-w-44 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
+                            <div className="flex justify-center">
+                                <img src={data.imgPath} alt="potato-img" className="max-w-28 md:max-w-44 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
+                            </div>
                             <div className="">
                                 <div>
-                                    <p className="text-gray-500/60 text-sm">{data.categoryName}</p>
-                                    <p className="font-medium">{data.productName}</p>
+                                    <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>
+                                    <p className="font-medium text-sm md:text-lg">{data.productName}</p>
                                     <div className="flex gap-0.5">
                                         {stars.map((src, index) => (
-                                            <img key={index} src={src} alt="star-img" className="w-4" />
+                                            <img key={index} src={src} alt="star-img" className="w-3" />
                                         ))}
                                         <p className="text-gray-500/60 text-sm">(4)</p>
                                     </div>
@@ -38,7 +40,7 @@ const BestSellers = () => {
                 ))}
             </div>
 
-            <div className="border-1 border-[#e1e3e6] rounded-md my-6 w-fit">
+            {/* <div className="border-1 border-[#e1e3e6] rounded-md my-6 w-fit">
                 <div className="w-fit px-4 py-2">
                     <img src="/images/best-sellers/bakery_image.png" alt="potato-img" className="max-w-40 md:max-w-45 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
                     <div className="">
@@ -65,7 +67,7 @@ const BestSellers = () => {
                         <div></div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </section>
 }
