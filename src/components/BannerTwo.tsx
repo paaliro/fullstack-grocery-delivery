@@ -11,7 +11,7 @@ const BannerTwo = () => {
                         <h1 className="text-2xl md:text-3xl font-semibold text-primary mb-6 text-[#fdb81d]">Why We Are the Best?</h1>
                         {bannerTwoContent.map((data, index) => (
                             <div key={index} className="flex gap-2.5 md:gap-4 mt-2">
-                                <img src={data.imgPath} alt="point-img" className="w-10 md:w-11" />
+                                <img src={data.imgPath} alt="point-img" className="w-9 md:w-11" />
                                 <div>
                                     <p className="text-[#364152] font-semibold md:text-xl">{data.title}</p>
                                     <p className="text-gray-500/60 text-sm">{data.text}</p>
