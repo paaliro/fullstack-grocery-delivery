@@ -110,3 +110,4 @@ export const bannerTwoContent = [
     text: "Loved by 10,000+ happy customers.",
   },
 ];
+
