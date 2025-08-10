@@ -111,3 +111,34 @@ export const bannerTwoContent = [
   },
 ];
 
+export const quickLinksData = [
+  {
+    title: "Quick Links",
+    links: [
+      { name: "Home", href: "#" },
+      { name: "Best Sellers", href: "#" },
+      { name: "Offers & Deals", href: "#" },
+      { name: "Contact Us", href: "#" },
+      { name: "FAQs", href: "#" },
+    ],
+  },
+  {
+    title: "Need help?",
+    links: [
+      { name: "Delivery Information", href: "#" },
+      { name: "Return & Refund Policy", href: "#" },
+      { name: "Payment Methods", href: "#" },
+      { name: "Track your Order", href: "#" },
+      { name: "Contact Us", href: "#" },
+    ],
+  },
+  {
+    title: "Follow Us",
+    links: [
+      { name: "Instagram", href: "#" },
+      { name: "Twitter", href: "#" },
+      { name: "Facebook", href: "#" },
+      { name: "YouTube", href: "#" },
+    ],
+  },
+];
