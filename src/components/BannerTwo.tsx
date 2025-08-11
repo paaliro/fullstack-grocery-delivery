@@ -8,7 +8,7 @@ const BannerTwo = () => {
             <div>
                 <div className="absolute inset-0 flex flex-col items-center md:items-end md:justify-center pt-16 md:pt-0 md:pr-24">
                     <div className="mt-10 md:mt-20 lg:mt-25">
-                        <h1 className="text-2xl md:text-3xl font-semibold text-primary mb-6 text-[#fdb81d]">Why We Are the Best?</h1>
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary mb-6 text-[#fdb81d]">Why We Are the Best?</h1>
                         {bannerTwoContent.map((data, index) => (
                             <div key={index} className="flex gap-2.5 md:gap-4 mt-2">
                                 <img src={data.imgPath} alt="point-img" className="w-9 md:w-11" />
