@@ -6,8 +6,8 @@ const BannerTwo = () => {
             <img src="/images/bottom_banner_image.png" alt="desktop-banner-img" className="hidden md:inline mt-24" />
             <img src="/images/bottom_banner_image_sm.png" alt="mobile-banner-img" className="md:hidden mt-18" />
             <div>
-                <div className="absolute inset-0 flex flex-col items-center md:items-end md:justify-center pt-16 md:pt-0 md:pr-24">
-                    <div className="mt-10 md:mt-20 lg:mt-25">
+                <div className="absolute inset-0 flex flex-col items-center md:items-end md:justify-center pt-10 md:pt-0 md:pr-24">
+                    <div className="md:mt-20 lg:mt-25">
                         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary mb-6 text-[#fdb81d]">Why We Are the Best?</h1>
                         {bannerTwoContent.map((data, index) => (
                             <div key={index} className="flex gap-2.5 md:gap-4 mt-2">
