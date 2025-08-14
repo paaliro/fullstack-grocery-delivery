@@ -94,16 +94,19 @@ export const bannerTwoContent = [
     title: "Fastest Delivery",
     text: "Groceries delivered in under 30 minutes.",
   },
+
   {
     imgPath: "/images/updated-svg/leaf_icon.svg",
     title: "Freshness Guaranteed",
     text: "Fresh produce straight from the source.",
   },
+
   {
     imgPath: "/images/updated-svg/coin_icon.svg",
     title: "Affordable Prices",
     text: "Quality groceries at unbeatable prices.",
   },
+  
   {
     imgPath: "/images/updated-svg/trust_icon.svg",
     title: "Trusted by Thousands",
