@@ -1,8 +1,5 @@
-import Navbar from "../components/Navbar";
-
 const Products = () => {
     return <section>
-        <Navbar />
 
 
     </section>
