@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="hidden md:flex justify-around items-center w-[60%]">
                     <a className="cursor-pointer border-1 border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</a>
                     <a className="cursor-pointer">Home</a>
-                    <a href="/src/pages/Products.tsx" className="cursor-pointer">All Product</a>
+                    <a className="cursor-pointer">All Product</a>
                     <div className="flex border-[1.5px] border-gray-400 rounded-3xl px-4">
                         <input type="text" placeholder="Search Products" className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500 text-sm" />
                         <img src="/images/search_icon.svg" alt="search-icon" />
