@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <div className="w-full">
-            <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-6 md:px-22 w-full border-b-1 border-b-gray-300">
+            <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-6 md:px-22 w-full border-b border-b-gray-300">
                 <img src="/images/logo.png" alt="brand-logo" className="w-20 h-12 md:w-20 cursor-pointer" />
                 <div className="md:hidden flex gap-6">
+                    {/* mobile icons */}
                     <div className="relative inline-block">
                         <button className="absolute -top-1.5 right-0 left-5 bg-[#fdb81d] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
                         <img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[24px] cursor-pointer" />
@@ -11,9 +14,9 @@ const Navbar = () => {
                     <img src="/images/menu_icon.svg" alt="menu-icon" className="w-[24px] cursor-pointer" />
                 </div>
                 <div className="hidden md:flex justify-around items-center w-[60%]">
-                    <a className="cursor-pointer border-1 border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</a>
-                    <a className="cursor-pointer">Home</a>
-                    <a className="cursor-pointer">All Product</a>
+                    <Link to="/seller" className="cursor-pointer border border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/products">All Product</Link>
                     <div className="flex border-[1.5px] border-gray-400 rounded-3xl px-4">
                         <input type="text" placeholder="Search Products" className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500 text-sm" />
                         <img src="/images/search_icon.svg" alt="search-icon" />
@@ -26,7 +29,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Navbar;
