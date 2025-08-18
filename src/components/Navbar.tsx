@@ -23,7 +23,7 @@ const Navbar = () => {
                     {menuOpen && (
                         <div
                             id="menubar"
-                            className="absolute z-50 top-14.5 left-0 pl-6 w-full md:px-24 pt-2 pb-3 flex flex-col gap-3 bg-[#fbf4e4] border-b border-b-gray-300">
+                            className="absolute z-50 top-14.5 left-0 pl-6 w-full md:px-24 pt-2 pb-2.5 flex flex-col gap-3 bg-[#fbf4e4] border-b border-b-gray-300">
                             <Link className="ml-1 w-fit" to="/">Home</Link>
                             <Link className="ml-1 w-fit" to="/products">All Product</Link>
                             <Link className="ml-1 w-fit" to="/contact">Contact</Link>
