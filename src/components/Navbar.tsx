@@ -23,10 +23,10 @@ const Navbar = () => {
                     {menuOpen && (
                         <div
                             id="menubar"
-                            className="absolute z-50 top-14.5 left-0 pl-6 w-full md:px-24 pt-2 pb-4 flex flex-col gap-3 bg-[#fbf4e4] border-b border-b-gray-300">
-                            <Link className="ml-1" to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-                            <Link className="ml-1" to="/products" onClick={() => setMenuOpen(false)}>All Product</Link>
-                            <Link className="ml-1" to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+                            className="absolute z-50 top-14.5 left-0 pl-6 w-full md:px-24 pt-2 pb-3 flex flex-col gap-3 bg-[#fbf4e4] border-b border-b-gray-300">
+                            <Link className="ml-1 w-fit" to="/">Home</Link>
+                            <Link className="ml-1 w-fit" to="/products">All Product</Link>
+                            <Link className="ml-1 w-fit" to="/contact">Contact</Link>
                             <button className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold w-fit">Login</button>
                         </div>
                     )}
