@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <div className="w-full">
             <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-6 md:px-22 w-full border-b border-b-gray-300">
@@ -13,16 +16,20 @@ const Navbar = () => {
                                 <button className="absolute -top-1.5 right-0 left-5 bg-[#fdb81d] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
                                 <img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[24px] cursor-pointer" />
                             </div>
-                            <img src="/images/menu_icon.svg" alt="menu-icon" className="w-[24px] cursor-pointer" />
+                            <img onClick={() => setMenuOpen(!menuOpen)} src="/images/menu_icon.svg" alt="menu-icon" className="w-[24px] cursor-pointer" />
                         </div>
                     </div>
 
-                    <div id="menubar" className="md:px-24 pt-4 pb-2 flex flex-col gap-3 bg-[#fbf4e4]">
-                        <Link className="ml-1" to="/">Home</Link>
-                        <Link className="ml-1" to="/products">All Product</Link>
-                        <Link className="ml-1" to="/">Contact</Link>
-                        <button className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold w-fit">Login</button>
-                    </div>
+                    {menuOpen && (
+                        <div
+                            id="menubar"
+                            className="md:px-24 pt-4 pb-2 flex flex-col gap-3 bg-[#fbf4e4]">
+                            <Link className="ml-1" to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+                            <Link className="ml-1" to="/products" onClick={() => setMenuOpen(false)}>All Product</Link>
+                            <Link className="ml-1" to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+                            <button className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold w-fit">Login</button>
+                        </div>
+                    )}
                 </div>
 
 
