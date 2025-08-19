@@ -2,9 +2,9 @@ import { allProductsContent, stars } from "../assets/helper";
 
 const Products = () => {
     return <section className="px-6 md:px-24">
-        <h1 className="text-xl md:text-3xl text-[#364152] mt-10 mb-4 md:mb-10">ALL PRODUCTS</h1>
+        <h1 className="text-xl md:text-3xl text-[#364152] mt-10 md:mb-10">ALL PRODUCTS</h1>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 py-5 md:pb-10 md:py-0">
             {allProductsContent.map((data, index) => (
                 <div key={index} className="border-1 border-[#e1e3e6] rounded-md">
                     <div className="px-4 md:px-4 py-2">
