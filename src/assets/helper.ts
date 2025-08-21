@@ -106,7 +106,7 @@ export const bannerTwoContent = [
     title: "Affordable Prices",
     text: "Quality groceries at unbeatable prices.",
   },
-  
+
   {
     imgPath: "/images/updated-svg/trust_icon.svg",
     title: "Trusted by Thousands",
@@ -147,6 +147,42 @@ export const quickLinksData = [
 ];
 
 export const allProductsContent = [
+  {
+    imgPath: "/images/best-sellers/bakery_image.png",
+    categoryName: "Bakery",
+    productName: "Brown Bread 400g",
+    actualPrice: 35,
+    oldPrice: 40,
+  },
+  {
+    imgPath: "/images/best-sellers/quinoa_image.png",
+    categoryName: "Grains",
+    productName: "Organic Quinoa 500g",
+    actualPrice: 420,
+    oldPrice: 450,
+  },
+  {
+    imgPath: "/images/best-sellers/carrot_image.png",
+    categoryName: "Vegetables",
+    productName: "Carrot 500g",
+    actualPrice: 44,
+    oldPrice: 50,
+  },
+  {
+    imgPath: "/images/best-sellers/apple_image.png",
+    categoryName: "Fruits",
+    productName: "Apple 1kg",
+    actualPrice: 90,
+    oldPrice: 100,
+  },
+  {
+    imgPath: "/images/best-sellers/cheese_image.png",
+    categoryName: "Dairy",
+    productName: "Cheese 200g",
+    actualPrice: 130,
+    oldPrice: 140,
+  },
+
   {
     imgPath: "/images/best-sellers/bakery_image.png",
     categoryName: "Bakery",
