@@ -148,7 +148,14 @@ export const quickLinksData = [
 
 export const allProductsContent = [
   {
-    imgPath: "/images/best-sellers/bakery_image.png",
+    imgPath: "/images/all-products/potato_image_1.png",
+    categoryName: "Vegetables",
+    productName: "Potato 500g",
+    actualPrice: 35,
+    oldPrice: 40,
+  },
+  {
+    imgPath: "/images/all-products/tomato_image.png",
     categoryName: "Bakery",
     productName: "Brown Bread 400g",
     actualPrice: 35,
