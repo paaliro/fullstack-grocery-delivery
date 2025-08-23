@@ -2,7 +2,10 @@ import { allProductsContent, stars } from "../assets/helper";
 
 const Products = () => {
     return <section className="px-6 md:px-24">
-        <h1 className="text-xl md:text-2xl text-[#364152] mt-10 md:mt-20 md:mb-10">ALL PRODUCTS</h1>
+        <div className="flex flex-col items-end w-fit gap-0.5 md:mb-10">
+            <h1 className="text-xl md:text-2xl text-[#364152] mt-10 md:mt-20">ALL PRODUCTS</h1>
+            <div className="border-1 md:border-2 w-[40%] rounded-full border-[#feca65]"></div>
+        </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 py-5 md:pb-10 md:py-0">
             {allProductsContent.map((data, index) => (
