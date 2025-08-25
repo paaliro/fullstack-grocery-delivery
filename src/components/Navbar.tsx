@@ -6,7 +6,7 @@ const Navbar = () => {
 
     return (
         <div className="w-full">
-            <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-6 md:px-22 w-full border-b border-b-gray-300">
+            <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-4 md:px-22 w-full border-b border-b-gray-300">
                 <Link to="/"> <img src="/images/logo.png" alt="brand-logo" className="hidden md:inline w-20 h-12 md:w-20 cursor-pointer" /></Link>
                 <div className="md:hidden w-full">
                     <div className=" flex justify-between ">
