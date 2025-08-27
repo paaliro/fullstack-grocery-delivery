@@ -10,6 +10,7 @@ const Products = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 py-5 md:pb-10 md:py-0">
             {allProductsContent.map((data, index) => (
                 <div key={index} className="border-1 border-[#e1e3e6] rounded-md">
+                    {/* <div className="px-4 md:px-4 py-2"> */}
                     <div className="px-4 md:px-4 py-2">
                         <div className="flex justify-center">
                             <img src={data.imgPath} alt="items-img" className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105" />
