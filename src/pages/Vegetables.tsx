@@ -1,0 +1,7 @@
+const Vegetables = () => { 
+    return <div>
+        <p>hello</p>
+    </div>
+}
+
+export default Vegetables;

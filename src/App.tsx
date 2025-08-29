@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Products from "./pages/Products";
 import Main from "./components/Main";
+import Vegetables from "./pages/Vegetables";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/vegetables" element={<Products />} />
+        <Route path="/vegetables" element={<Vegetables />} />
         {/* Add more pages here */}
       </Routes>
 
