@@ -1,44 +1,89 @@
+// export const categoriesData = [
+//   {
+//     imgPath: "/images/categories/organic_vegitable_image.png",
+//     backgroundColor: "#fff6da",
+//     text: "Organic Vegies",
+//   },
+
+//   {
+//     imgPath: "/images/categories/fresh_fruits_image.png",
+//     backgroundColor: "#fee0e0",
+//     text: "Fresh Fruits",
+//   },
+
+//   {
+//     imgPath: "/images/categories/bottles_image.png",
+//     backgroundColor: "#f0f5de",
+//     text: "Cold Drinks",
+//   },
+
+//   {
+//     imgPath: "/images/categories/maggi_image.png",
+//     backgroundColor: "#e1f5eb",
+//     text: "Instant Food",
+//   },
+
+//   {
+//     imgPath: "/images/categories/dairy_product_image.png",
+//     backgroundColor: "#fee6cd",
+//     text: "Dairy Products",
+//   },
+
+//   {
+//     imgPath: "/images/categories/bakery_image.png",
+//     backgroundColor: "#e0f6fe",
+//     text: "Bakery & Breads",
+//   },
+
+//   {
+//     imgPath: "/images/categories/grain_image.png",
+//     backgroundColor: "#f2e2f9",
+//     text: "Grains & Cereals",
+//   },
+// ];
+
 export const categoriesData = [
   {
     imgPath: "/images/categories/organic_vegitable_image.png",
     backgroundColor: "#fff6da",
     text: "Organic Vegies",
+    link: "/vegetables",
   },
-
   {
     imgPath: "/images/categories/fresh_fruits_image.png",
     backgroundColor: "#fee0e0",
     text: "Fresh Fruits",
+    link: "/category/fresh-fruits",
   },
-
   {
     imgPath: "/images/categories/bottles_image.png",
     backgroundColor: "#f0f5de",
     text: "Cold Drinks",
+    link: "/category/cold-drinks",
   },
-
   {
     imgPath: "/images/categories/maggi_image.png",
     backgroundColor: "#e1f5eb",
     text: "Instant Food",
+    link: "/category/instant-food",
   },
-
   {
     imgPath: "/images/categories/dairy_product_image.png",
     backgroundColor: "#fee6cd",
     text: "Dairy Products",
+    link: "/category/dairy-products",
   },
-
   {
     imgPath: "/images/categories/bakery_image.png",
     backgroundColor: "#e0f6fe",
     text: "Bakery & Breads",
+    link: "/category/bakery-breads",
   },
-
   {
     imgPath: "/images/categories/grain_image.png",
     backgroundColor: "#f2e2f9",
     text: "Grains & Cereals",
+    link: "/category/grains-cereals",
   },
 ];
 
@@ -299,7 +344,7 @@ export const allProductsContent = [
     categoryName: "Grains",
     productName: "Wheat flour 5kg",
     actualPrice: 250,
-    oldPrice: 300
+    oldPrice: 300,
   },
   {
     imgPath: "/images/best-sellers/quinoa_image.png",
