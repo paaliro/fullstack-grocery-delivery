@@ -3,7 +3,7 @@ export const categoriesData = [
     imgPath: "/images/categories/organic_vegitable_image.png",
     backgroundColor: "#fff6da",
     text: "Organic Vegies",
-    link: "/vegetables",
+    link: "category/vegetables",
   },
   {
     imgPath: "/images/categories/fresh_fruits_image.png",

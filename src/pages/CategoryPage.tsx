@@ -4,6 +4,8 @@ import type { Product } from "../assets/helper";
 
 const CategoryPage = () => {
     const { categoryName } = useParams<{ categoryName: string }>(); // get category from URL
+    console.log('categoryName:', categoryName);
+
     const products: Product[] = categoryName ? filterByCategory(categoryName) : [];
     console.log('products:', products);
 
