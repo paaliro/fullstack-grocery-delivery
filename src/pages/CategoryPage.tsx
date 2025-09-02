@@ -9,7 +9,7 @@ const CategoryPage = () => {
         (cat) => cat.link === `/category/${categoryName}`
     );
 
-    const products: Product[] = matchedCategory 
+    const products: Product[] = matchedCategory   
         ? filterByCategory(matchedCategory.categoryName)
         : [];
 
