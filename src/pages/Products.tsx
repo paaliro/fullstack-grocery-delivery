@@ -3,6 +3,7 @@ import { allProductsContent, stars } from "../assets/helper";
 const Products = () => {
     return <section className="px-4 md:px-24">
         <div className="flex flex-col items-end w-fit gap-0.5 md:mb-10">
+            
             <h1 className="text-xl md:text-2xl text-[#364152] mt-10 md:mt-20">ALL PRODUCTS</h1>
             <div className="border-1 md:border-2 w-[40%] rounded-full border-[#feca65]"></div>
         </div>
