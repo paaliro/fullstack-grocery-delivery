@@ -20,7 +20,7 @@ const CategoryPage = () => {
                     <h1 className="text-xl md:text-3xl font-medium text-[#364152] uppercase">{matchedCategory ? matchedCategory.text : "Not Found"}</h1>
                     <div className="borde r-1 md:border-2 w-[40%] rounded-full border-[#feca65]"></div>
                 </div>
-
+  
                 {products.length > 0 ? (
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                         {products.map((data, index) => (
