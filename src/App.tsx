@@ -7,7 +7,7 @@ import CategoryPage from "./pages/CategoryPage";
 
 function App() {
   return (
-    <Router> 
+    <Router>
       <Navbar />
 
       <Routes>
