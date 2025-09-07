@@ -14,7 +14,7 @@ const Navbar = () => {
                         <div className="flex gap-6 items-center">
                             <div className="relative inline-block">
                                 <button className="absolute -top-1.5 right-0 left-5 bg-[#fdb81d] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
-                                <img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[24px] cursor-pointer" />
+                                <Link to="/cart"><img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[24px] cursor-pointer" /></Link>
                             </div>
                             <img onClick={() => setMenuOpen(!menuOpen)} src="/images/menu_icon.svg" alt="menu-icon" className="w-[24px] cursor-pointer" />
                         </div>
@@ -31,8 +31,6 @@ const Navbar = () => {
                         </div>
                     )}
                 </div>
-
-
 
                 <div className="hidden md:flex justify-around items-center w-[60%]">
                     <Link to="/seller" className="cursor-pointer border border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</Link>
