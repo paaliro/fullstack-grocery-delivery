@@ -42,7 +42,7 @@ const Navbar = () => {
                     </div>
                     <div className="relative inline-block">
                         <button className="absolute -top-1.5 right-0 left-5 bg-[#fdb81d] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
-                        <img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[30px] cursor-pointer" />
+                        <Link to="/cart"><img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[30px] cursor-pointer" /></Link>
                     </div>
                     <button className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold">Login</button>
                 </div>
