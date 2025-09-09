@@ -4,3 +4,11 @@
 * {
   font-family: "Outfit", sans-serif;
 }
+
+.text-primary {
+  color: #364152;
+}
+
+.text-secondary {
+  color: #fdb81d;
+}
