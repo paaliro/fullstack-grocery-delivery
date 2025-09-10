@@ -1,7 +1,7 @@
 const Cart = () => {
     return <section className="px-4 md:px-22">
         <div className="flex flex-col md:flex-row mt-16">
-            <div className="max-w-4xl md:w-8/12 w-full border-1 border-emerald-500">
+            <div className="max-w-4xl md:w-8/12 w-full">
                 <p className="px-4 text-3xl font-medium text-primary">Shopping Cart
                     <span className="px-1 text-secondary font-medium text-sm">0 items</span>
                 </p>
@@ -11,7 +11,7 @@ const Cart = () => {
                     <p className="text-center">Action</p>
                 </div>
             </div>
-            <div className="border-1 md:w-4/12 w-full border-gray-500">
+            <div className="md:w-4/12 w-full border-1 border-gray-500 bg-gray-400/60">
                 <p className="text-3xl font-medium text-primary">Order Summary</p>
             </div>
         </div>
