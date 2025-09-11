@@ -12,7 +12,7 @@ const Cart = () => {
                 </div>
             </div>
             <div className="md:w-4/12 w-full border-1 border-gray-500 bg-gray-400/60">
-                <p className="text-3xl font-medium text-primary">Order Summary</p>
+                <p className="text-xl font-medium text-primary px-4">Order Summary</p>
             </div>
         </div>
 
