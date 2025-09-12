@@ -9,7 +9,7 @@ const Cart = () => {
                     <p className="text-left">Product Details</p>
                     <p className="text-center">Subtotal</p>
                     <p className="text-center">Action</p>
-                </div>
+                </div> 
             </div>
             <div className="md:w-4/12 w-full border-1 border-gray-900 bg-gray-400/60">
                 <p className="text-xl font-medium text-primary px-4">Order Summary</p>
