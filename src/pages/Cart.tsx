@@ -1,6 +1,6 @@
 const Cart = () => {
-    return <section className="px-4 md:px-22 my-10">
-        <div className="flex flex-col md:flex-row mt-14">
+    return <section className="px-4 md:px-22 my-20">
+        <div className="flex flex-col md:flex-row">
             <div className="max-w-4xl md:w-8/12 w-full">
                 <p className="px-4 text-3xl font-medium text-primary">Shopping Cart
                     <span className="px-1 text-secondary font-medium text-sm">0 items</span>
@@ -16,7 +16,7 @@ const Cart = () => {
                 <hr className="border-gray-300 my-5" />
                 <div>
                     <p className="uppercase">Delivery Address</p>
-                    <div className="flex justify-between mt-2">
+                    <div className="flex justify-between mt-0.5 md:mt-1.5">
                         <p className="text-[#6b7181]">No address found</p>
                         <button className="text-secondary text-lg hover:underline cursor-pointer">Change</button>
                     </div>
@@ -44,7 +44,7 @@ const Cart = () => {
                             <span>₹0</span>
                         </p>
                     </div>
-                    <button className="bg-secondary py-2 w-full my-4 font-medium text-white rounded-sm cursor-pointer hover:brightness-92 transition">Place Order</button>
+                    <button className="bg-secondary py-2 md:py-3 w-full my-4 font-medium text-white rounded-sm cursor-pointer hover:brightness-92 transition">Place Order</button>
                 </div>
             </div>
         </div>
