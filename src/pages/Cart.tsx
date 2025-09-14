@@ -44,7 +44,7 @@ const Cart = () => {
                             <span>₹0</span>
                         </p>
                     </div>
-                    <button className="bg-secondary py-2 md:py-3 w-full my-4 font-medium text-white rounded-sm cursor-pointer hover:brightness-92 transition">Place Order</button>
+                    <button className="bg-secondary py-2 md:py-3 w-full my-4 mb-5 font-medium text-white rounded-sm cursor-pointer hover:brightness-92 transition">Place Order</button>
                 </div>
             </div>
         </div>

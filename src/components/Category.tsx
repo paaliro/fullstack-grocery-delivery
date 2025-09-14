@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Category = () => {
     return (
-        <div className="px-6 md:px-24">
+        <div className="px-6 md:px-24 lg:px-24">
             <h1 className="text-2xl md:text-3xl font-medium text-[#364152] py-0 md:py-4">
                 Categories
             </h1>
