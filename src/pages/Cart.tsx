@@ -12,7 +12,7 @@ const Cart = () => {
                 </div>
             </div>
             <div className="md:w-4/12 w-full bg-[#f3f4f6] px-3 md:px-5 mr-3">
-                <p className="text-xl md:text-2xl font-medium text-primary pt-3">Order Summary</p>
+                <p className="text-xl md:text-2xl font-medium text-primary pt-5">Order Summary</p>
                 <hr className="border-gray-300 my-5" />
                 <div>
                     <p className="uppercase">Delivery Address</p>
@@ -29,7 +29,7 @@ const Cart = () => {
                     <div className="flex flex-col gap-1.5">
                         <p className="flex justify-between text-[#6b7181]">
                             <span>Price</span>
-                            <span>₹0</span>
+                            <span>₹0.00</span>
                         </p>
                         <p className="flex justify-between text-[#6b7181]">
                             <span>Shipping Fee</span>
@@ -37,11 +37,11 @@ const Cart = () => {
                         </p>
                         <p className="flex justify-between text-[#6b7181]">
                             <span>Tax (2%)</span>
-                            <span>₹0</span>
+                            <span>₹0.00</span>
                         </p>
                         <p className="flex justify-between text-[#6b7181] font-bold">
                             <span>Total Amount:</span>
-                            <span>₹0</span>
+                            <span>₹0.00</span>
                         </p>
                     </div>
                     <button className="bg-secondary py-2 md:py-3 w-full my-4 mb-5 font-medium text-white rounded-sm cursor-pointer hover:brightness-92 transition">Place Order</button>
