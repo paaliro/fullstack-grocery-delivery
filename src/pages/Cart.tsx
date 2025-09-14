@@ -11,14 +11,14 @@ const Cart = () => {
                     <p className="text-center">Action</p>
                 </div>
             </div>
-            <div className="md:w-4/12 w-full border-1 border-gray-400 bg-[#f3f4f6] px-3 md:px-5 mr-3">
-                <p className="text-xl font-medium text-primary pt-3">Order Summary</p>
+            <div className="md:w-4/12 w-full bg-[#f3f4f6] px-3 md:px-5 mr-3">
+                <p className="text-xl md:text-2xl font-medium text-primary pt-3">Order Summary</p>
                 <hr className="border-gray-300 my-5" />
                 <div>
                     <p className="uppercase">Delivery Address</p>
                     <div className="flex justify-between mt-2">
                         <p className="text-[#6b7181]">No address found</p>
-                        <button className="text-secondary text-lg">Change</button>
+                        <button className="text-secondary text-lg hover:underline cursor-pointer">Change</button>
                     </div>
                     <p className="uppercase mt-4">Payment Method</p>
                     <select className="w-full border border-gray-300 bg-white px-3 py-2 mt-2 outline-none" name="payment-methods" id="payment-methods">
@@ -39,12 +39,12 @@ const Cart = () => {
                             <span>Tax (2%)</span>
                             <span>₹0</span>
                         </p>
-                        <p className="flex justify-between text-[#6b7181]">
-                            <span>Total Amount</span>
+                        <p className="flex justify-between text-[#6b7181] font-bold">
+                            <span>Total Amount:</span>
                             <span>₹0</span>
                         </p>
                     </div>
-
+                    <button className="bg-secondary py-2 w-full my-4 font-medium text-white rounded-sm cursor-pointer hover:brightness-92 transition">Place Order</button>
                 </div>
             </div>
         </div>
