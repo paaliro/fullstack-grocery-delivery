@@ -11,7 +11,7 @@ const Cart = () => {
                     <p className="text-center">Action</p>
                 </div>
             </div>
-            <div className="md:w-4/12 w-full bg-[#f3f4f6] px-3 md:px-5 mr-3">
+            <div className="md:w-4/12 w-full bg-[#f3f4f6] px-3 md:px-5 mr-3 rounded-sm">
                 <p className="text-xl md:text-2xl font-medium text-primary pt-5">Order Summary</p>
                 <hr className="border-gray-300 my-5" />
                 <div>
