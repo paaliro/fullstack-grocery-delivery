@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Cart = () => {
     return <section className="px-4 md:px-22 my-15 md:my-20">
         <div className="flex flex-col md:flex-row">
@@ -10,10 +12,12 @@ const Cart = () => {
                     <p className="text-center">Subtotal</p>
                     <p className="text-center">Action</p>
                 </div>
-                <button className="group cursor-pointer text-secondary flex gap-2 mt-10 ml-2 font-medium">
-                    <img className="group-hover:-translate-x-1 transition" alt="arrow-img" src="/images/right-arrow.svg" />
-                    Continue Shopping
-                </button>
+                <Link to="/products">
+                    <button className="group cursor-pointer text-secondary flex gap-2 mt-10 ml-2 font-medium">
+                        <img className="group-hover:-translate-x-1 transition" alt="arrow-img" src="/images/right-arrow.svg" />
+                        Continue Shopping
+                    </button>
+                </Link>
             </div>
 
             <div className="md:w-4/12 w-full bg-[#f3f4f6] px-3 md:px-5 mr-3 rounded-sm mt-12 md:mt-0">
