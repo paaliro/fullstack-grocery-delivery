@@ -1,3 +1,4 @@
+// import { Link } from "react-router-dom";
 import { quickLinksData } from "../assets/helper";
 
 const Footer = () => {
@@ -15,6 +16,7 @@ const Footer = () => {
                             <ul className="text-gray-500/90 text-sm md:text-md">
                                 {section.links.map((link, linkIndex) => (
                                     <li key={linkIndex}>
+                                        {/* <Link to={link.href}>{link.name}</Link> */}
                                         <a href={link.href}>{link.name}</a>
                                     </li>
                                 ))}

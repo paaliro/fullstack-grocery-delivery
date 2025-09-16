@@ -16,3 +16,7 @@
 .bg-secondary {
   background-color: #fdb81d;
 }
+
+html {
+  scroll-behavior: smooth;
+}

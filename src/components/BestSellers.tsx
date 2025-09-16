@@ -2,7 +2,7 @@ import { bestSellersContent, stars } from "../assets/helper";
 
 const BestSellers = () => {
     return <section className="px-6 md:px-24 mt-14 md:mt-16 mb-4 md:mb-5">
-        <div className="">
+        <div>
             <h1 className="text-2xl md:text-3xl font-medium text-[#364152] mb-6 md:mb-8">Best Sellers</h1>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">

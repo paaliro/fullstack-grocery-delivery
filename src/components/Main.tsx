@@ -9,7 +9,9 @@ const Main = () => {
     return (
         <div>
             {/* <MenuBar /> */}
-            <Banner />
+            <div id="best-sellers">
+                <Banner />
+            </div>
             <Category />
             <BestSellers />
             <BannerTwo />

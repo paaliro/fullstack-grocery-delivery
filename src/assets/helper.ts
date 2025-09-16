@@ -172,7 +172,7 @@ export const quickLinksData = [
     title: "Quick Links",
     links: [
       { name: "Home", href: "#" },
-      { name: "Best Sellers", href: "#" },
+      { name: "Best Sellers", href: "#best-sellers" },
       { name: "Offers & Deals", href: "#" },
       { name: "Contact Us", href: "#" },
       { name: "FAQs", href: "#" },
