@@ -5,17 +5,18 @@ const Cart = () => {
                 <p className="text-3xl font-medium text-primary">Shopping Cart
                     <span className="px-0.5 text-secondary font-medium text-sm">0 items</span>
                 </p>
-                <div className="pt-6 grid grid-cols-[2fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
+                <div className="mt-6 grid grid-cols-[2fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
                     <p className="text-left">Product Details</p>
                     <p className="text-center">Subtotal</p>
                     <p className="text-center">Action</p>
                 </div>
-                <button className="text-secondary">
-                    <img alt="arrow-img" src="/images/black_arrow_icon.svg"></img>
+                <button className="group cursor-pointer text-secondary flex gap-2 mt-10 ml-2 font-medium">
+                    <img className="group-hover:-translate-x-1 transition" alt="arrow-img" src="/images/right-arrow.svg" />
                     Continue Shopping
                 </button>
             </div>
-            <div className="md:w-4/12 w-full bg-[#f3f4f6] px-3 md:px-5 mr-3 rounded-sm">
+
+            <div className="md:w-4/12 w-full bg-[#f3f4f6] px-3 md:px-5 mr-3 rounded-sm mt-12 md:mt-0">
                 <p className="text-xl md:text-2xl font-medium text-primary pt-5">Order Summary</p>
                 <hr className="border-gray-300 my-5" />
                 <div>
