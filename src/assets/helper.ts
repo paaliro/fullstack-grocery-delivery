@@ -209,6 +209,7 @@ export const allProductsContent = [
     actualPrice: 35,
     oldPrice: 40,
   },
+
   {
     imgPath: "/images/all-products/tomato_image.png",
     categoryName: "Vegetables",
@@ -216,6 +217,7 @@ export const allProductsContent = [
     actualPrice: 28,
     oldPrice: 30,
   },
+
   {
     imgPath: "/images/best-sellers/carrot_image.png",
     categoryName: "Vegetables",
@@ -223,6 +225,7 @@ export const allProductsContent = [
     actualPrice: 44,
     oldPrice: 50,
   },
+
   {
     imgPath: "/images/all-products/spinach_image_1.png",
     categoryName: "Vegetables",
@@ -230,6 +233,7 @@ export const allProductsContent = [
     actualPrice: 15,
     oldPrice: 18,
   },
+
   {
     imgPath: "/images/all-products/onion_image_1.png",
     categoryName: "Vegetables",
@@ -237,6 +241,7 @@ export const allProductsContent = [
     actualPrice: 45,
     oldPrice: 50,
   },
+
   {
     imgPath: "/images/best-sellers/apple_image.png",
     categoryName: "Fruits",
@@ -244,6 +249,7 @@ export const allProductsContent = [
     actualPrice: 90,
     oldPrice: 100,
   },
+
   {
     imgPath: "/images/all-products/amul_milk_image.png",
     categoryName: "Dairy",
@@ -251,6 +257,7 @@ export const allProductsContent = [
     actualPrice: 55,
     oldPrice: 60,
   },
+
   {
     imgPath: "/images/all-products/coca_cola_image.png",
     categoryName: "Drinks",
@@ -258,6 +265,7 @@ export const allProductsContent = [
     actualPrice: 75,
     oldPrice: 80,
   },
+
   {
     imgPath: "/images/all-products/basmati_rice_image.png",
     categoryName: "Grains",
@@ -265,6 +273,7 @@ export const allProductsContent = [
     actualPrice: 520,
     oldPrice: 550,
   },
+
   {
     imgPath: "/images/best-sellers/bakery_image.png",
     categoryName: "Bakery",
@@ -272,6 +281,7 @@ export const allProductsContent = [
     actualPrice: 35,
     oldPrice: 40,
   },
+
   {
     imgPath: "/images/all-products/maggie-pack.png",
     categoryName: "Instant",
@@ -279,6 +289,7 @@ export const allProductsContent = [
     actualPrice: 25,
     oldPrice: 30,
   },
+
   {
     imgPath: "/images/all-products/orange_image.png",
     categoryName: "Fruits",
@@ -286,6 +297,7 @@ export const allProductsContent = [
     actualPrice: 50,
     oldPrice: 65,
   },
+
   {
     imgPath: "/images/all-products/banana_image_1.png",
     categoryName: "Fruits",
@@ -293,6 +305,7 @@ export const allProductsContent = [
     actualPrice: 45,
     oldPrice: 50,
   },
+  
   {
     imgPath: "/images/all-products/mango_image_1.png",
     categoryName: "Dairy",
@@ -300,6 +313,7 @@ export const allProductsContent = [
     actualPrice: 80,
     oldPrice: 120,
   },
+
   {
     imgPath: "/images/all-products/grapes_image_1.png",
     categoryName: "Fruits",
@@ -307,6 +321,7 @@ export const allProductsContent = [
     actualPrice: 65,
     oldPrice: 70,
   },
+
   {
     imgPath: "/images/all-products/paneer_image.png",
     categoryName: "Dairy",
@@ -314,6 +329,7 @@ export const allProductsContent = [
     actualPrice: 85,
     oldPrice: 90,
   },
+
   {
     imgPath: "/images/all-products/eggs_image.png",
     categoryName: "Dairy",
@@ -321,6 +337,7 @@ export const allProductsContent = [
     actualPrice: 50,
     oldPrice: 70,
   },
+
   {
     imgPath: "/images/best-sellers/cheese_image.png",
     categoryName: "Dairy",
@@ -328,6 +345,7 @@ export const allProductsContent = [
     actualPrice: 100,
     oldPrice: 140,
   },
+
   {
     imgPath: "/images/all-products/sprite_image_1.png",
     categoryName: "Drinks",
@@ -335,6 +353,7 @@ export const allProductsContent = [
     actualPrice: 80,
     oldPrice: 95,
   },
+
   {
     imgPath: "/images/all-products/seven_up_image_1.png",
     categoryName: "Drinks",
@@ -342,6 +361,7 @@ export const allProductsContent = [
     actualPrice: 85,
     oldPrice: 105,
   },
+
   {
     imgPath: "/images/all-products/fanta_image_1.png",
     categoryName: "Drinks",
@@ -349,6 +369,7 @@ export const allProductsContent = [
     actualPrice: 90,
     oldPrice: 130,
   },
+  
   {
     imgPath: "/images/all-products/wheat_flour_image.png",
     categoryName: "Grains",
@@ -356,6 +377,7 @@ export const allProductsContent = [
     actualPrice: 250,
     oldPrice: 300,
   },
+
   {
     imgPath: "/images/best-sellers/quinoa_image.png",
     categoryName: "Grains",
@@ -363,6 +385,7 @@ export const allProductsContent = [
     actualPrice: 420,
     oldPrice: 500,
   },
+
   {
     imgPath: "/images/all-products/brown_rice_image.png",
     categoryName: "Grains",
@@ -370,6 +393,7 @@ export const allProductsContent = [
     actualPrice: 120,
     oldPrice: 140,
   },
+
   {
     imgPath: "/images/all-products/barley_image.png",
     categoryName: "Grains",
@@ -377,6 +401,7 @@ export const allProductsContent = [
     actualPrice: 140,
     oldPrice: 180,
   },
+
   {
     imgPath: "/images/all-products/butter_croissant_image.png",
     categoryName: "Bakery",
@@ -384,6 +409,7 @@ export const allProductsContent = [
     actualPrice: 35,
     oldPrice: 40,
   },
+
   {
     imgPath: "/images/all-products/knorr_soup_image.png",
     categoryName: "Instant",
