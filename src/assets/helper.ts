@@ -178,6 +178,7 @@ export const quickLinksData = [
       { name: "FAQs", href: "#" },
     ],
   },
+
   {
     title: "Need help?",
     links: [
@@ -188,6 +189,7 @@ export const quickLinksData = [
       { name: "Contact Us", href: "#" },
     ],
   },
+
   {
     title: "Follow Us",
     links: [
