@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
 
+html,
+body {
+  scroll-behavior: smooth; /* or smooth if you want */
+  overflow-x: hidden;
+}
+
 * {
   font-family: "Outfit", sans-serif;
 }
@@ -17,6 +23,6 @@
   background-color: #fdb81d;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
