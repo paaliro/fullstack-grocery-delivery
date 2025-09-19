@@ -198,7 +198,7 @@ export const quickLinksData = [
       { name: "Facebook", href: "#" },
       { name: "YouTube", href: "#" },
     ],
-  },
+  }, 
 ];
 
 export const allProductsContent = [
