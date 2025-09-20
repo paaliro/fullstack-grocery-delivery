@@ -3,15 +3,13 @@ import { allProductsContent, stars } from "../assets/helper";
 const Products = () => {
     return <section className="px-4 md:px-24">
         <div className="flex flex-col items-end w-fit gap-0.5 md:mb-10">
-            
-            <h1 className="text-xl md:text-2xl text-[#364152] mt-10 md:mt-20">ALL PRODUCTS</h1>
+            <h1 className="text-xl md:text-3xl font-medium text-[#364152] mt-10 md:mt-20">ALL PRODUCTS</h1>
             <div className="border-1 md:border-2 w-[40%] rounded-full border-[#feca65]"></div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 py-5 md:pb-10 md:py-0">
             {allProductsContent.map((data, index) => (
                 <div key={index} className="border-1 border-[#e1e3e6] rounded-md">
-                    {/* <div className="px-4 md:px-4 py-2"> */}
                     <div className="px-4 md:px-4 py-2">
                         <div className="flex justify-center">
                             <img src={data.imgPath} alt="items-img" className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105" />
