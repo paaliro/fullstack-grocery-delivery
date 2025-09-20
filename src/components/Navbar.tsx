@@ -19,7 +19,7 @@ const Navbar = () => {
                 <div className="md:hidden w-full">
                     <div className=" flex justify-between ">
                         <Link to="/"><img src="/images/logo.png" alt="brand-logo" className="w-20 h-12 md:w-20 cursor-pointer" /></Link>
-                        <div className="flex gap-6 items-center">
+                        <div className="flex gap-6 items-center mr-2">
                             <div className="relative inline-block">
                                 <button className="absolute -top-1.5 right-0 left-5 bg-[#fdb81d] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
                                 <Link to="/cart"><img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[24px] cursor-pointer" /></Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
                             <img onClick={() => setMenuOpen(!menuOpen)} src="/images/menu_icon.svg" alt="menu-icon" className="w-[24px] cursor-pointer" />
                         </div>
                     </div>
-                    <div className="flex border-[1.5px] border-gray-300 rounded-3xl px-4 mt-2">
+                    <div className="flex border-[1.5px] border-gray-300 rounded-3xl px-4 mt-2 mx-1.5">
                         <img className="w-3" src="/images/search_icon.svg" alt="search-icon" />
                         <input type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 pl-2 w-full bg-transparent outline-none placeholder-gray-400 text-xs" />
                     </div>
@@ -53,10 +53,10 @@ const Navbar = () => {
                         <img src="/images/search_icon.svg" alt="search-icon" />
                     </div>
                     <div className="relative inline-block">
-                        <button className="absolute -top-1.5 right-0 left-5 bg-[#fdb81d] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
+                        <button className="absolute -top-1.5 right-0 left-5 bg-secondary text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
                         <Link to="/cart"><img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[30px] cursor-pointer" /></Link>
                     </div>
-                    <button className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold">Login</button>
+                    <button className="px-7 py-1.5 bg-secondary rounded-3xl text-white cursor-pointer font-bold">Login</button>
                 </div>
             </div>
         </div>
