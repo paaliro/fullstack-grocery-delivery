@@ -69,7 +69,7 @@ const Products: React.FC = () => {
 
             {/* ✅ show message if no product */}
             {filteredProducts.length === 0 && (
-                <p className="text-center text-gray-500/60 mt-10 mb-30 font-medium text-xl md:text-2xl">No products found.</p>
+                <p className="text-center text-gray-500/60 mt-25 md:mt-20 mb-40 md:mb-45 font-medium text-xl md:text-2xl">No products found.</p>
             )}
         </section>
     );
