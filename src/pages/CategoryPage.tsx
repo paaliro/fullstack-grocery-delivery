@@ -9,20 +9,19 @@ const CategoryPage = () => {
         (cat) => cat.link === `/category/${categoryName}`
     );
 
-    const products: Product[] = matchedCategory   
+    const products: Product[] = matchedCategory
         ? filterByCategory(matchedCategory.categoryName)
         : [];
 
     return (
-        <section className="px-6 md:px-24 py-20 md:py-20">
-            <div>    
-                <div className="flex flex-col items-end w-fit gap-0.5 mb-8  md:mb-10">
-                    <h1 className="text-2xl md:text-3xl font-medium text-[#364152] uppercase">{matchedCategory ? matchedCategory.text : "Not Found"}</h1>
+        <section className="px-6 md:px-24 py-10 md:py-20">
+            <div>
+                <div className="flex flex-col items-end w-fit gap-0.5 mb-8 md:mb-10">
+                    <h1 className="text-xl md:text-3xl font-medium text-[#364152] uppercase">{matchedCategory ? matchedCategory.text : "Not Found"}</h1>
                     <div className="border-2 w-[40%] rounded-full border-[#feca65]"></div>
                 </div>
-  
                 {products.length > 0 ? (
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4.5">
                         {products.map((data, index) => (
                             <div key={index} className="border-1 border-[#e1e3e6] rounded-md" >
                                 <div className="px-4 md:px-4 py-2">
