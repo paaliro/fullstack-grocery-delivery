@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
-import { filterByCategory, stars } from "../assets/helper";
-import { categoriesData } from "../assets/helper"; // import mapping
-import type { Product } from "../assets/helper";
+import type { Product } from "../assets/interface";
+import { filterByCategory, stars, categoriesData } from "../assets/helper";
 
 const CategoryPage = () => {
     const { categoryName } = useParams<{ categoryName: string }>(); // slug from URL
@@ -59,7 +58,7 @@ const CategoryPage = () => {
                     <p className="text-gray-500">No products found for this category.</p>
                 )}
             </div>
-        </section>
+        </section >
     );
 };
 

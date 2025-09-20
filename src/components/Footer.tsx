@@ -1,11 +1,12 @@
 // import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { quickLinksData } from "../assets/helper";
 
 const Footer = () => {
     return <section className="bg-[#fbf4e4]">
         <div className="px-6 md:px-24 py-10 flex flex-col md:flex-row justify-between">
             <div className="md:w-4/12">
-                <img src="/images/logo.png" alt="logo-img" className="w-20 py-4" />
+                <Link to='/'><img src="/images/logo.png" alt="logo-img" className="w-20 py-4 cursor-pointer" /></Link>
                 <p className="text-gray-500/80">We deliver fresh groceries and snacks straight to your door. Trusted by thousands, we aim to make your shopping experience simple and affordable.</p>
             </div>
             <div className="flex flex-col md:flex-row md:gap-20">
@@ -15,7 +16,7 @@ const Footer = () => {
                             <h1 className="mb-3 md:mb-6 font-semibold text-[#364152]">{section.title}</h1>
                             <ul className="text-gray-500/90 text-sm md:text-md">
                                 {section.links.map((link, linkIndex) => (
-                                    <li key={linkIndex}>
+                                    <li className="hover:underline" key={linkIndex}>
                                         <a href={link.href}>{link.name}</a>
                                     </li>
                                 ))}

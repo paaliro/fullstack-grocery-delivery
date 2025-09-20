@@ -1,8 +1,16 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { SearchContext } from "../context/SearchContext";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+const { searchTerm, setSearchTerm } = useContext(SearchContext);
+const navigate = useNavigate();
+
+const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+setSearchTerm(e.target.value); 
+navigate("/products");
+};
 
     return (
         <div className="w-full">
@@ -37,7 +45,8 @@ const Navbar = () => {
                     <Link to="/">Home</Link>
                     <Link to="/products">All Product</Link>
                     <div className="flex border-[1.5px] border-gray-400 rounded-3xl px-4">
-                        <input type="text" placeholder="Search Products" className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500 text-sm" />
+                        {/* <input type="text" placeholder="Search Products" className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500 text-sm" /> */}
+                        <input type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500 text-sm" />
                         <img src="/images/search_icon.svg" alt="search-icon" />
                     </div>
                     <div className="relative inline-block">

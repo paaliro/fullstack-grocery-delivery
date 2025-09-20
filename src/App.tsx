@@ -6,22 +6,25 @@ import Main from "./components/Main";
 import CategoryPage from "./pages/CategoryPage";
 import Cart from "./pages/Cart";
 import ScrollToTop from "./components/ScrollToTop";
+import { SearchProvider } from "./context/SearchContext";
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Navbar />
+    <SearchProvider>
+      <Router>
+        <ScrollToTop />
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/category/:categoryName" element={<CategoryPage />} />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/category/:categoryName" element={<CategoryPage />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
 
-      <Footer />
-    </Router>
+        <Footer />
+      </Router>
+    </SearchProvider>
   );
 }
 

@@ -1,3 +1,5 @@
+import type { Product } from "./interface";
+
 export const categoriesData = [
   {
     imgPath: "/images/categories/organic_vegitable_image.png",
@@ -153,219 +155,220 @@ export const quickLinksData = [
       { name: "Facebook", href: "#" },
       { name: "YouTube", href: "#" },
     ],
-  }, 
+  },
 ];
 
 export const allProductsContent = [
   {
+    id: "potatxv",
     imgPath: "/images/all-products/potato_image_1.png",
     categoryName: "Vegetables",
     productName: "Potato 500g",
     actualPrice: 35,
     oldPrice: 40,
   },
-
   {
+    id: "tomatzyq",
     imgPath: "/images/all-products/tomato_image.png",
     categoryName: "Vegetables",
     productName: "Tomato 1kg",
     actualPrice: 28,
     oldPrice: 30,
   },
-
   {
+    id: "carroplm",
     imgPath: "/images/best-sellers/carrot_image.png",
     categoryName: "Vegetables",
     productName: "Carrot 500g",
     actualPrice: 44,
     oldPrice: 50,
   },
-
   {
+    id: "spinafrt",
     imgPath: "/images/all-products/spinach_image_1.png",
     categoryName: "Vegetables",
     productName: "Spinach 500g",
     actualPrice: 15,
     oldPrice: 18,
   },
-
   {
+    id: "onionlks",
     imgPath: "/images/all-products/onion_image_1.png",
     categoryName: "Vegetables",
     productName: "Onion 500g",
     actualPrice: 45,
     oldPrice: 50,
   },
-
   {
+    id: "applemno",
     imgPath: "/images/best-sellers/apple_image.png",
     categoryName: "Fruits",
     productName: "Apple 1kg",
     actualPrice: 90,
     oldPrice: 100,
   },
-
   {
+    id: "amulkijx",
     imgPath: "/images/all-products/amul_milk_image.png",
     categoryName: "Dairy",
     productName: "Amul Milk 1L",
     actualPrice: 55,
     oldPrice: 60,
   },
-
   {
+    id: "cocaclaa",
     imgPath: "/images/all-products/coca_cola_image.png",
     categoryName: "Drinks",
     productName: "Coca-cola 1.5L",
     actualPrice: 75,
     oldPrice: 80,
   },
-
   {
+    id: "basmaabc",
     imgPath: "/images/all-products/basmati_rice_image.png",
     categoryName: "Grains",
     productName: "Basmati Rice 5kg",
     actualPrice: 520,
     oldPrice: 550,
   },
-
   {
+    id: "brownbrd",
     imgPath: "/images/best-sellers/bakery_image.png",
     categoryName: "Bakery",
     productName: "Brown Bread 400g",
     actualPrice: 35,
     oldPrice: 40,
   },
-
   {
+    id: "maggipck",
     imgPath: "/images/all-products/maggie-pack.png",
     categoryName: "Instant",
     productName: "Maggie Noodles 280g",
     actualPrice: 25,
     oldPrice: 30,
   },
-
   {
+    id: "orangexy",
     imgPath: "/images/all-products/orange_image.png",
     categoryName: "Fruits",
     productName: "Orange 1kg",
     actualPrice: 50,
     oldPrice: 65,
   },
-
   {
+    id: "bananazz",
     imgPath: "/images/all-products/banana_image_1.png",
     categoryName: "Fruits",
     productName: "Banana 1kg",
     actualPrice: 45,
     oldPrice: 50,
   },
-  
   {
+    id: "mangomlk",
     imgPath: "/images/all-products/mango_image_1.png",
     categoryName: "Dairy",
     productName: "Mango 1kg",
     actualPrice: 80,
     oldPrice: 120,
   },
-
   {
+    id: "grapeshh",
     imgPath: "/images/all-products/grapes_image_1.png",
     categoryName: "Fruits",
     productName: "Grapes 500g",
     actualPrice: 65,
     oldPrice: 70,
   },
-
   {
+    id: "paneerqw",
     imgPath: "/images/all-products/paneer_image.png",
     categoryName: "Dairy",
     productName: "Paneer 200g",
     actualPrice: 85,
     oldPrice: 90,
   },
-
   {
+    id: "eggsbbqz",
     imgPath: "/images/all-products/eggs_image.png",
     categoryName: "Dairy",
     productName: "Eggs 12 pcs",
     actualPrice: 50,
     oldPrice: 70,
   },
-
   {
+    id: "cheesexx",
     imgPath: "/images/best-sellers/cheese_image.png",
     categoryName: "Dairy",
     productName: "Cheese 200g",
     actualPrice: 100,
     oldPrice: 140,
   },
-
   {
+    id: "spritepp",
     imgPath: "/images/all-products/sprite_image_1.png",
     categoryName: "Drinks",
     productName: "Sprite 1.5L",
     actualPrice: 80,
     oldPrice: 95,
   },
-
   {
+    id: "sevenupg",
     imgPath: "/images/all-products/seven_up_image_1.png",
     categoryName: "Drinks",
     productName: "7 UP 1.5L",
     actualPrice: 85,
     oldPrice: 105,
   },
-
   {
+    id: "fantayys",
     imgPath: "/images/all-products/fanta_image_1.png",
     categoryName: "Drinks",
     productName: "Fanta 1.5L",
     actualPrice: 90,
     oldPrice: 130,
   },
-  
   {
+    id: "wheatflr",
     imgPath: "/images/all-products/wheat_flour_image.png",
     categoryName: "Grains",
     productName: "Wheat flour 5kg",
     actualPrice: 250,
     oldPrice: 300,
   },
-
   {
+    id: "quinoagg",
     imgPath: "/images/best-sellers/quinoa_image.png",
     categoryName: "Grains",
     productName: "Organic Quinoa 500g",
     actualPrice: 420,
     oldPrice: 500,
   },
-
   {
+    id: "brownric",
     imgPath: "/images/all-products/brown_rice_image.png",
     categoryName: "Grains",
     productName: "Brown Rice 1kg",
     actualPrice: 120,
     oldPrice: 140,
   },
-
   {
+    id: "barleyff",
     imgPath: "/images/all-products/barley_image.png",
     categoryName: "Grains",
     productName: "Barley 1kg",
     actualPrice: 140,
     oldPrice: 180,
   },
-
   {
+    id: "buttercr",
     imgPath: "/images/all-products/butter_croissant_image.png",
     categoryName: "Bakery",
     productName: "Butter Croissant 100g",
     actualPrice: 35,
     oldPrice: 40,
   },
-
   {
+    id: "knorrcup",
     imgPath: "/images/all-products/knorr_soup_image.png",
     categoryName: "Instant",
     productName: "Knorr Cup Soup 70g",
@@ -373,15 +376,6 @@ export const allProductsContent = [
     oldPrice: 60,
   },
 ];
-
-// Define Product type
-export type Product = {
-  imgPath: string;
-  categoryName: string;
-  productName: string;
-  actualPrice: number;
-  oldPrice: number;
-};
 
 // Filter products by category
 export const filterByCategory = (category: string): Product[] => {
@@ -400,7 +394,3 @@ export const groupByCategory = (): Record<string, Product[]> => {
     return acc;
   }, {} as Record<string, Product[]>);
 };
-
-// Example usage
-const dairyProducts = filterByCategory("Dairy");
-console.log(dairyProducts);
