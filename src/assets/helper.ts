@@ -60,44 +60,6 @@ export const stars = [
   "/images/updated-svg/star_icon.svg",
 ];
 
-export const bestSellersContent = [
-  {
-    imgPath: "/images/best-sellers/bakery_image.png",
-    categoryName: "Bakery",
-    productName: "Brown Bread 400g",
-    actualPrice: 35,
-    oldPrice: 40,
-  },
-  {
-    imgPath: "/images/best-sellers/quinoa_image.png",
-    categoryName: "Grains",
-    productName: "Organic Quinoa 500g",
-    actualPrice: 420,
-    oldPrice: 450,
-  },
-  {
-    imgPath: "/images/best-sellers/carrot_image.png",
-    categoryName: "Vegetables",
-    productName: "Carrot 500g",
-    actualPrice: 44,
-    oldPrice: 50,
-  },
-  {
-    imgPath: "/images/best-sellers/apple_image.png",
-    categoryName: "Fruits",
-    productName: "Apple 1kg",
-    actualPrice: 90,
-    oldPrice: 100,
-  },
-  {
-    imgPath: "/images/best-sellers/cheese_image.png",
-    categoryName: "Dairy",
-    productName: "Cheese 200g",
-    actualPrice: 130,
-    oldPrice: 140,
-  },
-];
-
 export const bannerTwoContent = [
   {
     imgPath: "/images/updated-svg/delivery_truck_icon.svg",
@@ -160,7 +122,7 @@ export const quickLinksData = [
 
 export const allProductsContent = [
   {
-    id: "potatxv",
+    id: "potato57x9",
     imgPath: "/images/all-products/potato_image_1.png",
     categoryName: "Vegetables",
     productName: "Potato 500g",
@@ -168,7 +130,7 @@ export const allProductsContent = [
     oldPrice: 40,
   },
   {
-    id: "tomatzyq",
+    id: "tomato42z7",
     imgPath: "/images/all-products/tomato_image.png",
     categoryName: "Vegetables",
     productName: "Tomato 1kg",
@@ -176,7 +138,7 @@ export const allProductsContent = [
     oldPrice: 30,
   },
   {
-    id: "carroplm",
+    id: "carrot93pl",
     imgPath: "/images/best-sellers/carrot_image.png",
     categoryName: "Vegetables",
     productName: "Carrot 500g",
@@ -184,7 +146,7 @@ export const allProductsContent = [
     oldPrice: 50,
   },
   {
-    id: "spinafrt",
+    id: "spinac88rt",
     imgPath: "/images/all-products/spinach_image_1.png",
     categoryName: "Vegetables",
     productName: "Spinach 500g",
@@ -192,7 +154,7 @@ export const allProductsContent = [
     oldPrice: 18,
   },
   {
-    id: "onionlks",
+    id: "onion77lk",
     imgPath: "/images/all-products/onion_image_1.png",
     categoryName: "Vegetables",
     productName: "Onion 500g",
@@ -200,7 +162,7 @@ export const allProductsContent = [
     oldPrice: 50,
   },
   {
-    id: "applemno",
+    id: "apple29mn",
     imgPath: "/images/best-sellers/apple_image.png",
     categoryName: "Fruits",
     productName: "Apple 1kg",
@@ -208,7 +170,7 @@ export const allProductsContent = [
     oldPrice: 100,
   },
   {
-    id: "amulkijx",
+    id: "amul95jxq",
     imgPath: "/images/all-products/amul_milk_image.png",
     categoryName: "Dairy",
     productName: "Amul Milk 1L",
@@ -216,7 +178,7 @@ export const allProductsContent = [
     oldPrice: 60,
   },
   {
-    id: "cocaclaa",
+    id: "cocaco12aa",
     imgPath: "/images/all-products/coca_cola_image.png",
     categoryName: "Drinks",
     productName: "Coca-cola 1.5L",
@@ -224,7 +186,7 @@ export const allProductsContent = [
     oldPrice: 80,
   },
   {
-    id: "basmaabc",
+    id: "basmat19bc",
     imgPath: "/images/all-products/basmati_rice_image.png",
     categoryName: "Grains",
     productName: "Basmati Rice 5kg",
@@ -232,7 +194,7 @@ export const allProductsContent = [
     oldPrice: 550,
   },
   {
-    id: "brownbrd",
+    id: "brown36brd",
     imgPath: "/images/best-sellers/bakery_image.png",
     categoryName: "Bakery",
     productName: "Brown Bread 400g",
@@ -240,7 +202,7 @@ export const allProductsContent = [
     oldPrice: 40,
   },
   {
-    id: "maggipck",
+    id: "maggie82pk",
     imgPath: "/images/all-products/maggie-pack.png",
     categoryName: "Instant",
     productName: "Maggie Noodles 280g",
@@ -248,7 +210,7 @@ export const allProductsContent = [
     oldPrice: 30,
   },
   {
-    id: "orangexy",
+    id: "orange66xy",
     imgPath: "/images/all-products/orange_image.png",
     categoryName: "Fruits",
     productName: "Orange 1kg",
@@ -256,7 +218,7 @@ export const allProductsContent = [
     oldPrice: 65,
   },
   {
-    id: "bananazz",
+    id: "banana73zz",
     imgPath: "/images/all-products/banana_image_1.png",
     categoryName: "Fruits",
     productName: "Banana 1kg",
@@ -264,7 +226,7 @@ export const allProductsContent = [
     oldPrice: 50,
   },
   {
-    id: "mangomlk",
+    id: "mango41mlk",
     imgPath: "/images/all-products/mango_image_1.png",
     categoryName: "Dairy",
     productName: "Mango 1kg",
@@ -272,7 +234,7 @@ export const allProductsContent = [
     oldPrice: 120,
   },
   {
-    id: "grapeshh",
+    id: "grapes98hh",
     imgPath: "/images/all-products/grapes_image_1.png",
     categoryName: "Fruits",
     productName: "Grapes 500g",
@@ -280,7 +242,7 @@ export const allProductsContent = [
     oldPrice: 70,
   },
   {
-    id: "paneerqw",
+    id: "paneer57qw",
     imgPath: "/images/all-products/paneer_image.png",
     categoryName: "Dairy",
     productName: "Paneer 200g",
@@ -288,7 +250,7 @@ export const allProductsContent = [
     oldPrice: 90,
   },
   {
-    id: "eggsbbqz",
+    id: "eggs90bbq",
     imgPath: "/images/all-products/eggs_image.png",
     categoryName: "Dairy",
     productName: "Eggs 12 pcs",
@@ -296,7 +258,7 @@ export const allProductsContent = [
     oldPrice: 70,
   },
   {
-    id: "cheesexx",
+    id: "cheese88xx",
     imgPath: "/images/best-sellers/cheese_image.png",
     categoryName: "Dairy",
     productName: "Cheese 200g",
@@ -304,7 +266,7 @@ export const allProductsContent = [
     oldPrice: 140,
   },
   {
-    id: "spritepp",
+    id: "sprite61pp",
     imgPath: "/images/all-products/sprite_image_1.png",
     categoryName: "Drinks",
     productName: "Sprite 1.5L",
@@ -312,7 +274,7 @@ export const allProductsContent = [
     oldPrice: 95,
   },
   {
-    id: "sevenupg",
+    id: "seven34upg",
     imgPath: "/images/all-products/seven_up_image_1.png",
     categoryName: "Drinks",
     productName: "7 UP 1.5L",
@@ -320,7 +282,7 @@ export const allProductsContent = [
     oldPrice: 105,
   },
   {
-    id: "fantayys",
+    id: "fanta23ys",
     imgPath: "/images/all-products/fanta_image_1.png",
     categoryName: "Drinks",
     productName: "Fanta 1.5L",
@@ -328,7 +290,7 @@ export const allProductsContent = [
     oldPrice: 130,
   },
   {
-    id: "wheatflr",
+    id: "wheat47flr",
     imgPath: "/images/all-products/wheat_flour_image.png",
     categoryName: "Grains",
     productName: "Wheat flour 5kg",
@@ -336,7 +298,7 @@ export const allProductsContent = [
     oldPrice: 300,
   },
   {
-    id: "quinoagg",
+    id: "quinoa88gg",
     imgPath: "/images/best-sellers/quinoa_image.png",
     categoryName: "Grains",
     productName: "Organic Quinoa 500g",
@@ -344,7 +306,7 @@ export const allProductsContent = [
     oldPrice: 500,
   },
   {
-    id: "brownric",
+    id: "brown59ric",
     imgPath: "/images/all-products/brown_rice_image.png",
     categoryName: "Grains",
     productName: "Brown Rice 1kg",
@@ -352,7 +314,7 @@ export const allProductsContent = [
     oldPrice: 140,
   },
   {
-    id: "barleyff",
+    id: "barley16ff",
     imgPath: "/images/all-products/barley_image.png",
     categoryName: "Grains",
     productName: "Barley 1kg",
@@ -360,7 +322,7 @@ export const allProductsContent = [
     oldPrice: 180,
   },
   {
-    id: "buttercr",
+    id: "butter35cr",
     imgPath: "/images/all-products/butter_croissant_image.png",
     categoryName: "Bakery",
     productName: "Butter Croissant 100g",
@@ -368,7 +330,7 @@ export const allProductsContent = [
     oldPrice: 40,
   },
   {
-    id: "knorrcup",
+    id: "knorr64cup",
     imgPath: "/images/all-products/knorr_soup_image.png",
     categoryName: "Instant",
     productName: "Knorr Cup Soup 70g",
