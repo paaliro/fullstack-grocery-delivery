@@ -16,7 +16,6 @@ const Footer = () => {
                             <ul className="text-gray-500/90 text-sm md:text-md">
                                 {section.links.map((link, linkIndex) => (
                                     <li key={linkIndex}>
-                                        {/* <Link to={link.href}>{link.name}</Link> */}
                                         <a href={link.href}>{link.name}</a>
                                     </li>
                                 ))}
@@ -27,7 +26,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="px-6 md:px-24">
-            <p className="border-t-1 border-gray-500/40 text-center py-3 md:py-4 text-[#364152] text-sm md:text-md">Copyright 2025 © GreatStack.dev All Right Reserved.</p>
+            <p className="border-t-1 border-gray-500/40 text-center py-3 md:py-4 text-[#364152] text-sm md:text-md">Copyright © 2025 <span className="text-primary font-medium">Parveen Kumar</span> — All Rights Reserved.</p>
         </div>
     </section>
 };
