@@ -17,8 +17,8 @@ const CategoryPage = () => {
         <section className="px-6 md:px-24 py-20 md:py-20">
             <div>    
                 <div className="flex flex-col items-end w-fit gap-0.5 mb-8  md:mb-12">
-                    <h1 className="text-xl md:text-3xl font-medium text-[#364152] uppercase">{matchedCategory ? matchedCategory.text : "Not Found"}</h1>
-                    <div className="borde r-1 md:border-2 w-[40%] rounded-full border-[#feca65]"></div>
+                    <h1 className="text-2xl md:text-3xl font-medium text-[#364152] uppercase">{matchedCategory ? matchedCategory.text : "Not Found"}</h1>
+                    <div className="border-2 w-[40%] rounded-full border-[#feca65]"></div>
                 </div>
   
                 {products.length > 0 ? (
