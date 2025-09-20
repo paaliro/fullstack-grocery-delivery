@@ -7,7 +7,8 @@ import CategoryPage from "./pages/CategoryPage";
 import Cart from "./pages/Cart";
 import ScrollToTop from "./components/ScrollToTop";
 import { SearchProvider } from "./context/SearchContext";
-import ProductDetails from "./pages/ProductDetails";
+// import ProductDetails from "./pages/ProductDetails";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/error" element={<PageNotFound />} />
           <Route path="/category/:categoryName" element={<CategoryPage />} />
-          <Route path="/products/:categoryName/:id" element={<ProductDetails />} />
+          {/* <Route path="/products/:categoryName/:id" element={<ProductDetails />} /> */}
+          <Route path="/products/:categoryName/:id" element={<PageNotFound />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
 

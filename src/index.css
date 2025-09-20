@@ -22,3 +22,7 @@ body {
 .bg-secondary {
   background-color: #fdb81d;
 }
+
+.bg-secondary:hover {
+  background-color: #e5a938; /* darker shade */
+}

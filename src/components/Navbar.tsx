@@ -45,7 +45,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex justify-around items-center w-[60%]">
-                    <Link to="/seller" className="cursor-pointer border border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</Link>
+                    <Link to="/error" className="cursor-pointer border border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</Link>
                     <Link to="/">Home</Link>
                     <Link to="/products">All Product</Link>
                     <div className="flex border-[1.5px] border-gray-400 rounded-3xl px-4">
