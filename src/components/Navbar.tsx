@@ -1,9 +1,11 @@
 import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { SearchContext } from "../context/SearchContext";
+import LoginForm from "./LoginForm"; // ✅ using as a component
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [showLogin, setShowLogin] = useState(false); // controls login modal
     const { searchTerm, setSearchTerm } = useContext(SearchContext);
     const navigate = useNavigate();
 
@@ -39,7 +41,8 @@ const Navbar = () => {
                             <Link className="ml-1 w-fit" to="/" onClick={() => setMenuOpen(!menuOpen)}>Home</Link>
                             <Link className="ml-1 w-fit" to="/products" onClick={() => setMenuOpen(!menuOpen)}>All Product</Link>
                             <Link className="ml-1 w-fit" to="/contact" onClick={() => setMenuOpen(!menuOpen)}>Contact</Link>
-                            <button className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold w-fit">Login</button>
+                            <button onClick={() => setShowLogin(true)}
+                                className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold w-fit">Login</button>
                         </div>
                     )}
                 </div>
@@ -56,8 +59,22 @@ const Navbar = () => {
                         <button className="absolute -top-1.5 right-0 left-5 bg-secondary text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
                         <Link to="/cart"><img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[30px] cursor-pointer" /></Link>
                     </div>
-                    <button className="px-7 py-1.5 bg-secondary rounded-3xl text-white cursor-pointer font-bold">Login</button>
+                    <button onClick={() => setShowLogin(true)}
+                        className="px-7 py-1.5 bg-secondary rounded-3xl text-white cursor-pointer font-bold">Login</button>
                 </div>
+
+                {/* Modal (LoginForm Component) */}
+                {showLogin && (
+                    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+                        <div className="relative">
+                            <button
+                                onClick={() => setShowLogin(false)} className="absolute -top-4 -right-4 bg-white 
+                            rounded-full w-8 h-8 flex items-center justify-center shadow-md">✕</button>
+                            <LoginForm />
+                        </div>
+                    </div>
+                )}
+
             </div>
         </div>
     );
