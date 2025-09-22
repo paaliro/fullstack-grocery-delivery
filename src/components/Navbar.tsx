@@ -1,18 +1,41 @@
-import { useState, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useContext, useEffect, useRef } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { SearchContext } from "../context/SearchContext";
-import LoginForm from "./LoginForm"; // ✅ using as a component
+import LoginForm from "./LoginForm";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [showLogin, setShowLogin] = useState(false); // controls login modal
     const { searchTerm, setSearchTerm } = useContext(SearchContext);
     const navigate = useNavigate();
+    const location = useLocation(); // 🟩 detects route changes
+
+    const menuRef = useRef<HTMLDivElement>(null); // 🟩 reference to menu
 
     const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(e.target.value);
         navigate("/products");
     };
+
+    // 🟩 Close menu on route change
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location.pathname]);
+
+    // 🟩 Close menu if click outside
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+                setMenuOpen(false);
+            }
+        };
+        if (menuOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [menuOpen]);
 
     return (
         <div className="w-full">
@@ -34,13 +57,15 @@ const Navbar = () => {
                         <input type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 pl-2 w-full bg-transparent outline-none placeholder-gray-400/80 text-xs" />
                     </div>
 
+                    {/* Mobile Menu Bar */}
                     {menuOpen && (
                         <div
+                            ref={menuRef} // 🟩 attach ref here
                             id="menubar"
                             className="absolute z-50 top-14.5 left-0 pl-6 w-full md:px-24 pt-2 pb-2.5 flex flex-col gap-3 bg-[#fbf4e4] border-b border-b-gray-300">
                             <Link className="ml-1 w-fit" to="/" onClick={() => setMenuOpen(!menuOpen)}>Home</Link>
                             <Link className="ml-1 w-fit" to="/products" onClick={() => setMenuOpen(!menuOpen)}>All Product</Link>
-                            <Link className="ml-1 w-fit" to="/contact" onClick={() => setMenuOpen(!menuOpen)}>Contact</Link>
+                            <Link className="ml-1 w-fit" to="/error" onClick={() => setMenuOpen(!menuOpen)}>Contact</Link>
                             <button onClick={() => setShowLogin(true)}
                                 className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold w-fit">Login</button>
                         </div>
