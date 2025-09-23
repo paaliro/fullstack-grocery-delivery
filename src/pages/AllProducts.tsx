@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { allProductsContent, stars } from "../assets/helper";
-import { SearchContext } from "../context/SearchContext"; // ✅ import context
+import { SearchContext } from "../context/SearchContext";
 
 const Products: React.FC = () => {
     const { searchTerm } = useContext(SearchContext); // ✅ get searchTerm from context
@@ -69,7 +69,23 @@ const Products: React.FC = () => {
 
             {/* ✅ show message if no product */}
             {filteredProducts.length === 0 && (
-                <p className="text-center text-gray-500/60 mt-25 md:mt-20 mb-40 md:mb-45 font-medium text-xl md:text-2xl">No products found.</p>
+                <div className="flex flex-col items-center justify-center min-h-[60vh] text-center mb-14 md:mb-20">
+                    <img
+                        src="/images/empty-state.jpg"
+                        alt="No products"
+                        className="w-24 md:w-40 mb-4 opacity-80"
+                    />
+                    <h2 className="text-lg md:text-2xl font-semibold text-[#364152]">
+                        No products found in this category
+                    </h2>
+                    <p className="text-sm md:text-base text-gray-500 mt-2">
+                        Please check other categories or come back later.
+                    </p>
+                    <a
+                        href="/#"
+                        className="mt-6 inline-block px-4 py-2 bg-[#feca65] text-white rounded-md shadow hover:bg-[#e5b755] transition-colors">Browse All Categories
+                    </a>
+                </div>
             )}
         </section>
     );

@@ -65,7 +65,7 @@ const Navbar = () => {
                             className="absolute z-50 top-14.5 left-0 pl-6 w-full md:px-24 pt-2 pb-2.5 flex flex-col gap-3 bg-[#fbf4e4] border-b border-b-gray-300">
                             <Link className="ml-1 w-fit" to="/" onClick={() => setMenuOpen(!menuOpen)}>Home</Link>
                             <Link className="ml-1 w-fit" to="/products" onClick={() => setMenuOpen(!menuOpen)}>All Product</Link>
-                            <Link className="ml-1 w-fit" to="/error" onClick={() => setMenuOpen(!menuOpen)}>Contact</Link>
+                            <Link className="ml-1 w-fit" to="/pagenotfound" onClick={() => setMenuOpen(!menuOpen)}>Contact</Link>
                             <button onClick={() => setShowLogin(true)}
                                 className="px-7 py-1.5 bg-[#fdb81d] rounded-3xl text-white cursor-pointer font-bold w-fit">Login</button>
                         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex justify-around items-center w-[60%]">
-                    <Link to="/error" className="cursor-pointer border border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</Link>
+                    <Link to="/pagenotfound" className="cursor-pointer border border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</Link>
                     <Link to="/">Home</Link>
                     <Link to="/products">All Product</Link>
                     <div className="flex border-[1.5px] border-gray-400 rounded-3xl px-4">
