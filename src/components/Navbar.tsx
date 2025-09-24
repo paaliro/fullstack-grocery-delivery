@@ -94,7 +94,7 @@ const Navbar = () => {
                         <div className="relative">
                             <button
                                 onClick={() => setShowLogin(false)} className="absolute -top-4 -right-4 bg-white 
-                            rounded-full w-8 h-8 flex items-center justify-center shadow-md">✕</button>
+                            rounded-full w-8 h-8 flex items-center justify-center shadow-md cursor-pointer">✕</button>
                             <LoginForm />
                         </div>
                     </div>
