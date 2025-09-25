@@ -4,13 +4,19 @@ import { allProductsContent, stars } from "../assets/helper";
 import { SearchContext } from "../context/SearchContext";
 
 const Products: React.FC = () => {
-    const { searchTerm } = useContext(SearchContext); // ✅ get searchTerm from context
+    const { searchTerm, setSearchTerm } = useContext(SearchContext); // get searchTerm from context
 
-    // ✅ filter products based on search
+    // filter products based on search
     const filteredProducts = allProductsContent.filter((product) =>
         product.productName.toLowerCase().includes(searchTerm.toLowerCase()) ||
         product.categoryName.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    // clear search on clicking "Browse All Categories"
+    const handleBrowseAll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        setSearchTerm(""); // this clears the input fields in Navbar automatically
+    };
 
     return (
         <section className="px-4 md:px-24">
@@ -21,7 +27,7 @@ const Products: React.FC = () => {
                 <div className="border-1 md:border-2 w-[40%] rounded-full border-[#feca65]"></div>
             </div>
 
-            {/* ✅ render products */}
+            {/* render products */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4.5 py-5 md:pb-10 md:py-0">
                 {filteredProducts.map((data) => (
                     <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
@@ -67,7 +73,7 @@ const Products: React.FC = () => {
                 ))}
             </div>
 
-            {/* ✅ show message if no product */}
+            {/* show message if no product */}
             {filteredProducts.length === 0 && (
                 <div className="flex flex-col items-center justify-center min-h-[60vh] text-center mb-14 md:mb-20">
                     <img
@@ -83,6 +89,7 @@ const Products: React.FC = () => {
                     </p>
                     <a
                         href="/#"
+                        onClick={handleBrowseAll}
                         className="mt-6 inline-block px-4 py-2 bg-[#feca65] text-white rounded-md shadow hover:bg-[#e5b755] transition-colors">Browse All Categories
                     </a>
                 </div>
