@@ -41,6 +41,8 @@ const Navbar = () => {
         <div className="w-full">
             <div className="flex items-center justify-between bg-[#fbf4e4] pt-1 pb-1.5 px-4 md:px-22 w-full border-b border-b-gray-300">
                 <Link to="/"> <img src="/images/logo.png" alt="brand-logo" className="hidden md:inline w-20 h-12 md:w-20 cursor-pointer" /></Link>
+
+                {/* Mobile Navbar */}
                 <div className="md:hidden w-full">
                     <div className=" flex justify-between ">
                         <Link to="/"><img src="/images/logo.png" alt="brand-logo" className="w-20 h-12 md:w-20 cursor-pointer" /></Link>
@@ -54,7 +56,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex border-[1.5px] border-gray-400/50 rounded-3xl px-4 mt-2 mx-2">
                         <img className="w-3" src="/images/search_icon.svg" alt="search-icon" />
-                        <input  type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 pl-2 w-full bg-transparent outline-none placeholder-gray-400/80 text-xs" />
+                        <input type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 pl-2 w-full bg-transparent outline-none placeholder-gray-400/80 text-xs" />
                     </div>
 
                     {/* Mobile Menu Bar */}
@@ -72,6 +74,7 @@ const Navbar = () => {
                     )}
                 </div>
 
+                {/* Desktop Navbar */}
                 <div className="hidden md:flex justify-around items-center w-[60%]">
                     <Link to="/pagenotfound" className="cursor-pointer border border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</Link>
                     <Link to="/">Home</Link>
