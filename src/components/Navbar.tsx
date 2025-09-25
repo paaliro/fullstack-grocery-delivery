@@ -54,7 +54,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex border-[1.5px] border-gray-400/50 rounded-3xl px-4 mt-2 mx-2">
                         <img className="w-3" src="/images/search_icon.svg" alt="search-icon" />
-                        <input type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 pl-2 w-full bg-transparent outline-none placeholder-gray-400/80 text-xs" />
+                        <input  type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 pl-2 w-full bg-transparent outline-none placeholder-gray-400/80 text-xs" />
                     </div>
 
                     {/* Mobile Menu Bar */}
