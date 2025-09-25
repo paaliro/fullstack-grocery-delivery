@@ -10,3 +10,8 @@ export type SearchContextType = {
   searchTerm: string;
   setSearchTerm: (term: string) => void;
 };
+
+export type ThemeContextType = {
+  theme: "light" | "dark";
+  toggleTheme: () => void;
+};
