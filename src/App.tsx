@@ -9,7 +9,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import { SearchProvider } from "./context/SearchContext";
 // import ProductDetails from "./pages/ProductDetails";
 import PageNotFound from "./pages/PageNotFound";
-import UnderDevelopment from "./components/UnderDevelopment";
+// import UnderDevelopment from "./components/UnderDevelopment";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
           <Route path="/pagenotfound" element={<PageNotFound />} />
           <Route path="/category/:categoryName" element={<CategoryPage />} />
           {/* <Route path="/products/:categoryName/:id" element={<ProductDetails />} /> */}
-          <Route path="/products/:categoryName/:id" element={<UnderDevelopment />} />
+          {/* <Route path="/products/:categoryName/:id" element={<UnderDevelopment />} /> */}
+          <Route path="/products/:categoryName/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
 
