@@ -17,7 +17,7 @@ const ProductDetails = () => {
         description: [
             "High-quality material",
             "Comfortable for everyday use",
-            "Available in different sizes".   
+            "Available in different sizes"
         ]
     };
 
