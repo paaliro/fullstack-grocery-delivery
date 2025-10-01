@@ -17,7 +17,7 @@ const CategoryPage = () => {
             <div>
                 <div className="flex flex-col items-end w-fit gap-0.5 mb-8 md:mb-10">
                     <h1 className="text-xl md:text-3xl font-medium text-[#364152] uppercase">{matchedCategory ? matchedCategory.text : "Not Found"}</h1>
-                    <div className="border-2 w-[40%] rounded-full border-[#feca65]"></div>
+                    <div className="border-2 w-[40%] rounded-full border-[#feca65]">nm</div>
                 </div>
                 {products.length > 0 ? (
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4.5">
