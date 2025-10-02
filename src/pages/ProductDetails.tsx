@@ -24,7 +24,7 @@ const ProductDetails = () => {
     const [thumbnail, setThumbnail] = React.useState(product.images[0]);
 
     return product && (
-        <section className="flex justify-center">
+        <section className="flex justify-center py-15 md:py-20">
             <div className="max-w-6xl w-full px-6">
                 <p>
                     <span>Home</span> /
