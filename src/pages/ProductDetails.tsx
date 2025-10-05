@@ -30,7 +30,7 @@ const ProductDetails = () => {
                     <span>Home</span> /
                     <span> Products</span> /
                     <span> {product.category}</span> /
-                    <span className="text-indigo-500"> {product.name}</span>
+                    <span className="text-indigo-500"> {product.name} </span>
                 </p>
 
                 <div className="flex flex-col md:flex-row gap-16 mt-4">  
