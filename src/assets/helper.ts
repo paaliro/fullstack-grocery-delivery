@@ -112,10 +112,10 @@ export const quickLinksData = [
   {
     title: "Follow Us",
     links: [
-      { name: "Instagram", href: "#" },
+      { name: "Instagram", href: "https://www.instagram.com/" },
       { name: "Twitter", href: "#" },
-      { name: "Facebook", href: "#" },
-      { name: "YouTube", href: "#" },
+      { name: "Facebook", href: "https://www.facebook.com/" },
+      { name: "YouTube", href: "https://www.youtube.com/" },
     ],
   },
 ];
