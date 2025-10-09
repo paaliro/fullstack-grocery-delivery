@@ -129,6 +129,7 @@ export const allProductsContent = [
     actualPrice: 35,
     oldPrice: 40,
   },
+
   {
     id: "tomato42z7",
     imgPath: "/images/all-products/tomato_image.png",
@@ -137,6 +138,7 @@ export const allProductsContent = [
     actualPrice: 28,
     oldPrice: 30,
   },
+
   {
     id: "carrot93pl",
     imgPath: "/images/best-sellers/carrot_image.png",
@@ -145,6 +147,7 @@ export const allProductsContent = [
     actualPrice: 44,
     oldPrice: 50,
   },
+
   {
     id: "spinac88rt",
     imgPath: "/images/all-products/spinach_image_1.png",
@@ -153,6 +156,7 @@ export const allProductsContent = [
     actualPrice: 15,
     oldPrice: 18,
   },
+
   {
     id: "onion77lk",
     imgPath: "/images/all-products/onion_image_1.png",
@@ -161,6 +165,7 @@ export const allProductsContent = [
     actualPrice: 45,
     oldPrice: 50,
   },
+  
   {
     id: "apple29mn",
     imgPath: "/images/best-sellers/apple_image.png",
