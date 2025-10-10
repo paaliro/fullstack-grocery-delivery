@@ -153,7 +153,7 @@ export const allProductsContent = [
     imgPath: "/images/all-products/spinach_image_1.png",
     categoryName: "Vegetables",
     productName: "Spinach 500g",
-    actualPrice: 15,
+    actualPrice: 15, 
     oldPrice: 18,
   },
 
@@ -165,7 +165,7 @@ export const allProductsContent = [
     actualPrice: 45,
     oldPrice: 50,
   },
-  
+
   {
     id: "apple29mn",
     imgPath: "/images/best-sellers/apple_image.png",
