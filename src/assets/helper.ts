@@ -155,7 +155,7 @@ export const allProductsContent = [
     productName: "Spinach 500g",
     actualPrice: 15, 
     oldPrice: 18,
-  },
+  },   
 
   {
     id: "onion77lk",
