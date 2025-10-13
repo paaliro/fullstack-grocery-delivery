@@ -174,6 +174,7 @@ export const allProductsContent = [
     actualPrice: 90,
     oldPrice: 100,
   },
+  
   {
     id: "amul95jxq",
     imgPath: "/images/all-products/amul_milk_image.png",
@@ -182,6 +183,7 @@ export const allProductsContent = [
     actualPrice: 55,
     oldPrice: 60,
   },
+
   {
     id: "cocaco12aa",
     imgPath: "/images/all-products/coca_cola_image.png",
@@ -214,6 +216,7 @@ export const allProductsContent = [
     actualPrice: 25,
     oldPrice: 30,
   },
+
   {
     id: "orange66xy",
     imgPath: "/images/all-products/orange_image.png",
@@ -230,6 +233,7 @@ export const allProductsContent = [
     actualPrice: 45,
     oldPrice: 50,
   },
+  
   {
     id: "mango41mlk",
     imgPath: "/images/all-products/mango_image_1.png",
