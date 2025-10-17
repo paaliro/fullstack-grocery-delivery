@@ -242,6 +242,7 @@ export const allProductsContent = [
     actualPrice: 80,
     oldPrice: 120,
   },
+
   {
     id: "grapes98hh",
     imgPath: "/images/all-products/grapes_image_1.png",
@@ -250,6 +251,7 @@ export const allProductsContent = [
     actualPrice: 65,
     oldPrice: 70,
   },
+
   {
     id: "paneer57qw",
     imgPath: "/images/all-products/paneer_image.png",
@@ -258,6 +260,7 @@ export const allProductsContent = [
     actualPrice: 85,
     oldPrice: 90,
   },
+
   {
     id: "eggs90bbq",
     imgPath: "/images/all-products/eggs_image.png",
@@ -266,6 +269,7 @@ export const allProductsContent = [
     actualPrice: 50,
     oldPrice: 70,
   },
+  
   {
     id: "cheese88xx",
     imgPath: "/images/best-sellers/cheese_image.png",
