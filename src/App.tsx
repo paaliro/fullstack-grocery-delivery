@@ -24,7 +24,6 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/pagenotfound" element={<PageNotFound />} />
           <Route path="/category/:categoryName" element={<CategoryPage />} />
-          {/* <Route path="/products/:categoryName/:id" element={<ProductDetails />} /> */}
           <Route path="/products/:categoryName/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
