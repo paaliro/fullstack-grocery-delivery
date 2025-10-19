@@ -20,7 +20,7 @@ const ProductDetails = () => {
             "Available in different sizes"
         ]
     };
-  
+
     const [thumbnail, setThumbnail] = React.useState(product.images[0]);
 
     return product && (
@@ -33,12 +33,12 @@ const ProductDetails = () => {
                     <span className="text-indigo-500"> {product.name} </span>
                 </p>
 
-                <div className="flex flex-col md:flex-row gap-16 mt-4">  
+                <div className="flex flex-col md:flex-row gap-16 mt-4">
                     <div className="flex gap-3">
                         <div className="flex flex-col gap-3">
                             {product.images.map((image, index) => (
                                 <div key={index} onClick={() => setThumbnail(image)} className="border max-w-24 border-gray-500/30 rounded overflow-hidden cursor-pointer" >
-                                    <img src={image} alt={`Thumbnail ${index + 1}`}/>
+                                    <img src={image} alt={`Thumbnail ${index + 1}`} />
                                 </div>
                             ))}
                         </div>
@@ -49,7 +49,7 @@ const ProductDetails = () => {
                     </div>
 
                     <div className="text-sm w-full md:w-1/2">
-                        <h1 className="text-3xl font-medium">{product.name}</h1> 
+                        <h1 className="text-3xl font-medium">{product.name}</h1>
 
                         <div className="flex items-center gap-0.5 mt-1">
                             {Array(5).fill('').map((_, i) => (
