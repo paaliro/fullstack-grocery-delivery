@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { allProductsContent, stars } from "../assets/helper";
 
 const BestSellers = () => {
@@ -13,7 +14,7 @@ const BestSellers = () => {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                     {randomProducts.map((data) => (
-                        <div key={data.id} className="border-1 border-[#e1e3e6] rounded-md">
+                        <Link className="border-1 border-[#e1e3e6] rounded-md" key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
                             <div className="px-4 md:px-4 py-2">
                                 <div className="flex justify-center">
                                     <img
@@ -46,7 +47,7 @@ const BestSellers = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
