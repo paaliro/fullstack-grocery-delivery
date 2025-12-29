@@ -68,7 +68,7 @@ const ProductDetails = () => {
 
                         <p className="text-base font-medium mt-6">About Product</p>
                         <ul className="list-disc ml-4 text-gray-500/70">
-                            <li>Fresh and high-quality</li>
+                            <li>Fresh and high-quality</li>  q
                             <li>Carefully packed for safety</li>
                             <li>Available in multiple quantities</li>
                         </ul>
