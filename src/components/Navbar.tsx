@@ -75,9 +75,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Navbar */}
-                <div className="hidden md:flex justify-around items-center w-[60%]">
-                    <Link to="/pagenotfound" className="cursor-pointer border border-gray-400 px-3 rounded-3xl text-sm text-gray-500">Seller Dashboard</Link>
-                    <Link to="/">Home</Link>
+                <div className="hidden md:flex justify-around items-center md:w-[80%] lg:w-[60%]">
+                    <Link to="/pagenotfound" className="cursor-pointer border border-gray-400 md:px-2 lg:px-3 rounded-3xl md:text-xs lg:text-sm text-gray-500">Seller Dashboard</Link>
+                    <Link to="/" className="">Home</Link>
                     <Link to="/products">All Product</Link>
                     <div className="flex border-[1.5px] border-gray-400 rounded-3xl px-4">
                         <input type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500 text-sm" />

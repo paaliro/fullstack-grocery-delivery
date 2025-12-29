@@ -7,9 +7,7 @@ import CategoryPage from "./pages/CategoryPage";
 import Cart from "./pages/Cart";
 import ScrollToTop from "./components/ScrollToTop";
 import { SearchProvider } from "./context/SearchContext";
-// import ProductDetails from "./pages/ProductDetails";
 import PageNotFound from "./pages/PageNotFound";
-// import UnderDevelopment from "./components/UnderDevelopment";
 import ProductDetails from "./pages/ProductDetails";
 
 function App() {
