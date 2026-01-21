@@ -77,8 +77,8 @@ const Navbar = () => {
                 {/* Desktop Navbar */}
                 <div className="hidden md:flex justify-around items-center md:w-[80%] lg:w-[60%]">
                     <Link to="/pagenotfound" className="cursor-pointer border border-gray-400 md:px-2 lg:px-3 rounded-3xl md:text-xs lg:text-sm text-gray-500">Seller Dashboard</Link>
-                    <Link to="/" className="">Home</Link>
-                    <Link to="/products">All Product</Link>
+                    <Link to="/" className="md:text-sm lg:text-base">Home</Link>
+                    <Link to="/products" className="md:text-sm lg:text-base">All Product</Link>
                     <div className="flex border-[1.5px] border-gray-400 rounded-3xl px-4">
                         <input type="text" placeholder="Search Products" value={searchTerm} onChange={handleSearch} className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500 text-sm" />
                         <img src="/images/search_icon.svg" alt="search-icon" />
@@ -88,7 +88,7 @@ const Navbar = () => {
                         <Link to="/cart"><img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[30px] cursor-pointer" /></Link>
                     </div>
                     <button onClick={() => setShowLogin(true)}
-                        className="px-7 py-1.5 bg-secondary rounded-3xl text-white cursor-pointer font-bold">Login</button>
+                        className="md:px-2 lg:px-7 md:py-1 lg:py-1.5 bg-secondary md:rounded-2xl lg:rounded-3xl text-white cursor-pointer md:font-semibold lg:font-bold md:text-sm lg:text-base">Login</button>
                 </div>
 
                 {/* Modal (LoginForm Component) */}
