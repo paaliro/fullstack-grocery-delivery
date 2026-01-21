@@ -14,14 +14,16 @@ const BestSellers = () => {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                     {randomProducts.map((data) => (
-                        <Link className="border-1 border-[#e1e3e6] rounded-md" key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
+                        <div className="border-1 border-[#e1e3e6] rounded-md">
                             <div className="px-4 md:px-4 py-2">
                                 <div className="flex justify-center">
-                                    <img
-                                        src={data.imgPath}
-                                        alt={data.productName}
-                                        className="max-w-28 md:max-w-36 cursor-pointer transform transition-transform duration-300 hover:scale-105"
-                                    />
+                                    <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
+                                        <img
+                                            src={data.imgPath}
+                                            alt={data.productName}
+                                            className="max-w-28 md:max-w-36 cursor-pointer transform transition-transform duration-300 hover:scale-105"
+                                        />
+                                    </Link>
                                 </div>
                                 <div>
                                     <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>
@@ -47,7 +49,7 @@ const BestSellers = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
             </div>

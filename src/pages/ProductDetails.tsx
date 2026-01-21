@@ -21,8 +21,8 @@ const ProductDetails = () => {
     // Example static multiple images (you can modify based on your project)
     const productImages = [
         product.imgPath,
-        "/images/placeholder_1.png",
-        "/images/placeholder_2.png",
+        // "/images/placeholder_1.png",
+        // "/images/placeholder_2.png",
     ];
 
     const [thumbnail, setThumbnail] = React.useState(productImages[0]);
@@ -37,6 +37,7 @@ const ProductDetails = () => {
                 </p>
 
                 <div className="flex flex-col md:flex-row gap-16 mt-4">
+
                     {/* Thumbnails + Main Image */}
                     <div className="flex gap-3">
                         <div className="flex flex-col gap-3">
@@ -68,7 +69,7 @@ const ProductDetails = () => {
 
                         <p className="text-base font-medium mt-6">About Product</p>
                         <ul className="list-disc ml-4 text-gray-500/70">
-                            <li>Fresh and high-quality</li>  q
+                            <li>Fresh and high-quality</li>
                             <li>Carefully packed for safety</li>
                             <li>Available in multiple quantities</li>
                         </ul>
