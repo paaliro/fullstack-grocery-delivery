@@ -3,6 +3,7 @@ import BannerTwo from "./BannerTwo";
 import BestSellers from "./BestSellers";
 import Category from "./Category";
 import NeverMiss from "./NeverMiss";
+import { Toaster } from 'react-hot-toast';
 
 const Main = () => {
 
@@ -12,6 +13,7 @@ const Main = () => {
 
     return (
         <div>
+            <Toaster />
             <Banner />
             <Category />
             <BestSellers />

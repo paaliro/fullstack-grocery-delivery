@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { notify } from "../utils/helper";
 
 const Banner = () => {
+
     return <div>
         <div className="relative">
             <img src="/images/main_banner_bg.png" alt="banner-desktop-image" className="hidden md:block px-4 md:px-24 py-10" />
@@ -15,6 +17,9 @@ const Banner = () => {
                 </div>
             </div>
         </div>
+
+        <button onClick={notify}>Make me a toast</button>
+
     </div>
 }
 
