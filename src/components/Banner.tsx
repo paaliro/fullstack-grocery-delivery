@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { notify } from "../utils/helper";
 
 const Banner = () => {
 
@@ -17,9 +16,6 @@ const Banner = () => {
                 </div>
             </div>
         </div>
-
-        <button onClick={notify}>Make me a toast</button>
-
     </div>
 }
 
