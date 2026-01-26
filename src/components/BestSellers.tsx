@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { allProductsContent, stars } from "../assets/helper";
+import { allProductsContent, stars } from "../assets/data";
 
 const BestSellers = () => {
     // shuffle + take first 8 products

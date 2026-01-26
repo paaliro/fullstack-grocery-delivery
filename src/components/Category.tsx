@@ -1,4 +1,4 @@
-import { categoriesData } from "../assets/helper";
+import { categoriesData } from "../assets/data";
 import { Link } from "react-router-dom";
 
 const Category = () => {

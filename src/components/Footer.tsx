@@ -1,6 +1,6 @@
 // import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { quickLinksData } from "../assets/helper";
+import { quickLinksData } from "../assets/data";
 
 const Footer = () => {
     return <section className="bg-[#fbf4e4]">

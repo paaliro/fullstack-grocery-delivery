@@ -1,4 +1,4 @@
-import { bannerTwoContent } from "../assets/helper";
+import { bannerTwoContent } from "../assets/data";
 
 const BannerTwo = () => {
     return <section className="px-6 md:px-24">

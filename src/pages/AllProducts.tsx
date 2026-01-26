@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { allProductsContent, stars } from "../assets/helper";
+import { allProductsContent, stars } from "../assets/data";
 import { SearchContext } from "../context/SearchContext";
 
 const Products: React.FC = () => {

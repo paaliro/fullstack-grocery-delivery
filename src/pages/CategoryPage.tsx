@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import type { Product } from "../assets/interface";
-import { filterByCategory, stars, categoriesData } from "../assets/helper";
+import { filterByCategory, stars, categoriesData } from "../assets/data";
 
 const CategoryPage = () => {
     const { categoryName } = useParams<{ categoryName: string }>(); // slug from URL
@@ -25,7 +25,9 @@ const CategoryPage = () => {
                             <div key={index} className="border-1 border-[#e1e3e6] rounded-md" >
                                 <div className="px-4 md:px-4 py-2">
                                     <div className="flex justify-center">
-                                        <img src={data.imgPath} alt={data.productName} className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105" />
+                                        <Link key={data.imgPath} to={`/category/${data.categoryName.toLowerCase()}`}>
+                                            <img src={data.imgPath} alt={data.productName} className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105" />
+                                        </Link>
                                     </div>
                                     <div>
                                         <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { allProductsContent } from "../assets/helper";
+import { allProductsContent } from "../assets/data";
 
 const ProductDetails = () => {
     const { id } = useParams<{ id: string }>();
