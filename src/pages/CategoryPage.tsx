@@ -5,12 +5,12 @@ import { filterByCategory, stars, categoriesData } from "../assets/data";
 const CategoryPage = () => {
     const { categoryName } = useParams<{ categoryName: string }>(); // slug from URL
     const matchedCategory = categoriesData.find(
-        (cat) => cat.link === `/category/${categoryName}`
+        (category) => category.link === `/category/${categoryName}`
     );
 
-    const products: Product[] = matchedCategory
-        ? filterByCategory(matchedCategory.categoryName)
-        : [];
+    const products: Product[] = matchedCategory ? filterByCategory(matchedCategory.categoryName) : [];
+    console.log("products:", products)
+    console.log("matchedCategory:", matchedCategory)
 
     return (
         <section className="px-6 md:px-24 py-10 md:py-20">
