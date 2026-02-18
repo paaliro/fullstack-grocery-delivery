@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { showToast } from "../utils/helper";
 
 const NeverMiss: React.FC = () => {
     const [email, setEmail] = useState<string>("");
@@ -26,7 +27,7 @@ const NeverMiss: React.FC = () => {
 
         setError("");
         setEmail("");
-
+        showToast('success', 'Successfully subscribed!');
         console.log("Saved:", trimmedEmail);
     };
 
@@ -37,6 +38,7 @@ const NeverMiss: React.FC = () => {
 
     const handleBlur = () => {
         if (email && !emailRegex.test(email.trim())) {
+            showToast('error', 'Invalid email format');
             setError("Invalid email format");
         }
     };
@@ -51,7 +53,8 @@ const NeverMiss: React.FC = () => {
 
                 <form onSubmit={handleSubscribe} className="flex flex-col mt-12 mb-10 md:w-[55%]" noValidate>
                     <div className="flex">
-                        <input type="email" placeholder="Enter your email" className={`border rounded-l-md outline-none w-full px-3 py-3 text-gray-600 ${error ? "border-red-500" : "border-gray-500/30"}`} value={email} onChange={handleChange} onBlur={handleBlur} aria-invalid={!!error} aria-describedby="email-error" />
+                        <input type="email" maxLength={70} placeholder="Enter your email" className={`border rounded-l-md outline-none w-full px-3 py-3 text-gray-600 
+                            ${error ? "border-red-500" : "border-gray-500/30"}`} value={email} onChange={handleChange} onBlur={handleBlur} aria-invalid={!!error} aria-describedby="email-error" />
 
                         <button type="submit" className="md:px-12 px-8 text-white bg-[#fdb81d] rounded-r-md py-3 text-md hover:bg-yellow-600 transition-colors cursor-pointer" >
                             Subscribe
