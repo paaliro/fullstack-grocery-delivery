@@ -1,17 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import type { CartItem, FoodItem } from "../assets/interface";
 
-export interface FoodItem {
-  id: number;
-  name: string;
-  price: number;
-}
-
-export interface CartItem extends FoodItem {
-  quantity: number;
-}
+const STORAGE_KEY = "cart_items";
 
 export const useCart = () => {
-  const [cart, setCart] = useState<CartItem[]>([]);
+  // ✅ Load from storage initially
+  const [cart, setCart] = useState<CartItem[]>(() => {
+    const storedCart =
+      localStorage.getItem(STORAGE_KEY) ||
+      sessionStorage.getItem(STORAGE_KEY);
+
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
+
+  // ✅ Sync to both storages whenever cart changes
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (item: FoodItem) => {
     setCart((prev) => {
@@ -19,7 +25,9 @@ export const useCart = () => {
 
       if (existing) {
         return prev.map((i) =>
-          i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i,
+          i.id === item.id
+            ? { ...i, quantity: i.quantity + 1 }
+            : i
         );
       }
 
@@ -27,7 +35,7 @@ export const useCart = () => {
     });
   };
 
-  const removeFromCart = (id: number) => {
+  const removeFromCart = (id: string) => {
     setCart((prev) => prev.filter((item) => item.id !== id));
   };
 

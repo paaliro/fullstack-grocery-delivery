@@ -120,7 +120,7 @@ export const quickLinksData = [
   },
 ];
 
-export const allProductsContent = [
+export const allProductsContent: Product[] = [
   {
     id: "potato57x9",
     imgPath: "/images/all-products/potato_image_1.png",
