@@ -7,8 +7,7 @@ export const useCart = () => {
   // ✅ Load from storage initially
   const [cart, setCart] = useState<CartItem[]>(() => {
     const storedCart =
-      localStorage.getItem(STORAGE_KEY) ||
-      sessionStorage.getItem(STORAGE_KEY);
+      localStorage.getItem(STORAGE_KEY) || sessionStorage.getItem(STORAGE_KEY);
 
     return storedCart ? JSON.parse(storedCart) : [];
   });
@@ -25,9 +24,7 @@ export const useCart = () => {
 
       if (existing) {
         return prev.map((i) =>
-          i.id === item.id
-            ? { ...i, quantity: i.quantity + 1 }
-            : i
+          i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i,
         );
       }
 
@@ -39,5 +36,18 @@ export const useCart = () => {
     setCart((prev) => prev.filter((item) => item.id !== id));
   };
 
-  return { cart, addToCart, removeFromCart };
+  const updateQuantity = (id: string, amount: number) => {
+    setCart(
+      (prev) =>
+        prev
+          .map((item) =>
+            item.id === id
+              ? { ...item, quantity: item.quantity + amount }
+              : item,
+          )
+          .filter((item) => item.quantity > 0), // remove if 0
+    );
+  };
+
+  return { cart, addToCart, removeFromCart, updateQuantity };
 };

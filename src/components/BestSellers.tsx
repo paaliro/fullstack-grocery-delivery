@@ -4,11 +4,17 @@ import { useCart } from "../hooks/useCart";
 import { useMemo } from "react";
 
 const BestSellers = () => {
-    const { addToCart } = useCart();
+    const { addToCart, cart, updateQuantity } = useCart();
 
     // Randomly shuffle the products and select the first 5 for display
     const randomProducts = useMemo(() => { return [...allProductsContent].sort(() => Math.random() - 0.5).slice(0, 5); }, []);
 
+    const getQuantity = (id: string) => {
+        const item = cart.find((foodItem) => foodItem.id === id);
+        return item ? item.quantity : 0;
+    };
+
+    const quantity = (id: string) => getQuantity(id);
     return (
         <section className="px-6 md:px-24 mt-14 md:mt-16 mb-4 md:mb-5">
             <div>
@@ -18,9 +24,9 @@ const BestSellers = () => {
                     {randomProducts.map((data) => (
                         <div key={data.id} className="border-1 border-[#e1e3e6] rounded-md">
                             <div className="px-4 md:px-4 py-2">
-                                <div className="flex justify-center">
+                                <div className="flex justify-center h-[90%]">
                                     <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
-                                        <img src={data.imgPath} alt={data.productName} className="min-w-26 max-w-28 md:min-w-30 md:max-w-36 cursor-pointer transform transition-transform duration-300 hover:scale-105" />
+                                        <img src={data.imgPath} alt={data.productName} className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105" />
                                     </Link>
                                 </div>
                                 <div>
@@ -31,17 +37,23 @@ const BestSellers = () => {
                                         <p className="text-gray-500/60 text-sm">(4)</p>
                                     </div>
 
-                                    <div className="flex justify-between items-baseline pt-3">
+                                    <div className="flex justify-between pt-3">
                                         <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
                                             ₹{data.actualPrice}
-                                            <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">
-                                                ₹{data.oldPrice}
-                                            </span>
+                                            <small className="text-gray-500/60 line-through px-1">₹{data.oldPrice}</small>
                                         </p>
-                                        <button onClick={() => addToCart(data)} className="flex gap-0.5 md:gap-2 border-1 text-xs md:text-lg border-[#feca65] px-1 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] font-normal cursor-pointer">
-                                            <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-3 md:w-4" />
-                                            Add
-                                        </button>
+                                        {quantity(data.id) === 0 ? (
+                                            <button onClick={() => addToCart(data)} className="flex gap-0.5 md:gap-2 border border-[#feca65] px-1 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] cursor-pointer" >
+                                                <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-3 md:w-4" />
+                                                Add
+                                            </button>
+                                        ) : (
+                                            <div className="flex items-center gap-1 border border-[#feca65] px-1 md:px-2 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65]">
+                                                <button onClick={() => updateQuantity(data.id, -1)} className="px-2 font-bold cursor-pointer">-</button>
+                                                <span className="font-medium">{quantity(data.id)}</span>
+                                                <button onClick={() => updateQuantity(data.id, 1)} className="px-2 font-bold cursor-pointer" >+</button>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
