@@ -6,6 +6,7 @@ import LoginForm from "./LoginForm";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [showLogin, setShowLogin] = useState(false); // controls login modal
+    const [cartCount, setCartCount] = useState(0);
     const { searchTerm, setSearchTerm } = useContext(SearchContext);
     const navigate = useNavigate();
     const location = useLocation(); // 🟩 detects route changes
@@ -36,6 +37,25 @@ const Navbar = () => {
         }
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, [menuOpen]);
+
+    // Cart count logic (placeholder, replace with real data fetching)
+    const updateCartCount = () => {
+        const storedCart = localStorage.getItem("cart_items");
+
+        if (storedCart) {
+            const cart = JSON.parse(storedCart);
+            const total = cart.reduce(
+                (sum: number, item: any) => sum + item.quantity, 0
+            );
+            setCartCount(total);
+        } else {
+            setCartCount(0);
+        }
+    }
+
+    useEffect(() => {
+        updateCartCount();
+    }, []);
 
     return (
         <div className="w-full">
@@ -84,7 +104,7 @@ const Navbar = () => {
                         <img src="/images/search_icon.svg" alt="search-icon" />
                     </div>
                     <div className="relative inline-block">
-                        <button className="absolute -top-1.5 right-0 left-5 bg-secondary text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</button>
+                        <button className="absolute -top-1.5 right-0 left-5 bg-secondary text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">{cartCount}</button>
                         <Link to="/cart"><img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[30px] cursor-pointer" /></Link>
                     </div>
                     <button onClick={() => setShowLogin(true)}
