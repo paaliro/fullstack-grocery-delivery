@@ -2,11 +2,11 @@ import { useState, useContext, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { SearchContext } from "../context/SearchContext";
 import LoginForm from "./LoginForm";
+import { useCartStore } from "../store/useCartStore";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [showLogin, setShowLogin] = useState(false); // controls login modal
-    const [cartCount, setCartCount] = useState(0);
     const { searchTerm, setSearchTerm } = useContext(SearchContext);
     const navigate = useNavigate();
     const location = useLocation(); // 🟩 detects route changes
@@ -38,24 +38,12 @@ const Navbar = () => {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, [menuOpen]);
 
-    // Cart count logic (placeholder, replace with real data fetching)
-    const updateCartCount = () => {
-        const storedCart = localStorage.getItem("cart_items");
+    const cart = useCartStore((state) => state.cart);
 
-        if (storedCart) {
-            const cart = JSON.parse(storedCart);
-            const total = cart.reduce(
-                (sum: number, item: any) => sum + item.quantity, 0
-            );
-            setCartCount(total);
-        } else {
-            setCartCount(0);
-        }
-    }
-
-    useEffect(() => {
-        updateCartCount();
-    }, []);
+    const cartCount = cart.reduce(
+        (sum, item) => sum + item.quantity,
+        0
+    );
 
     return (
         <div className="w-full">

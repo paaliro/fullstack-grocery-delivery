@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { allProductsContent, stars } from "../assets/data";
-import { useCart } from "../hooks/useCart";
 import { useMemo } from "react";
+import { useCartStore } from "../store/useCartStore";
 
 const BestSellers = () => {
-    const { addToCart, cart, updateQuantity } = useCart();
+    const { addToCart, cart, updateQuantity } = useCartStore();
 
     // Randomly shuffle the products and select the first 5 for display
     const randomProducts = useMemo(() => { return [...allProductsContent].sort(() => Math.random() - 0.5).slice(0, 5); }, []);
