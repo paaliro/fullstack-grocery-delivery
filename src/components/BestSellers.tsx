@@ -7,7 +7,9 @@ const BestSellers = () => {
     const { addToCart, cart, updateQuantity } = useCartStore();
 
     // Randomly shuffle the products and select the first 5 for display
-    const randomProducts = useMemo(() => { return [...allProductsContent].sort(() => Math.random() - 0.5).slice(0, 5); }, []);
+    const firstFiveProducts = useMemo(() => {
+        return allProductsContent.slice(0, 5);
+    }, [allProductsContent]);
 
     const getQuantity = (id: string) => {
         const item = cart.find((foodItem) => foodItem.id === id);
@@ -21,7 +23,7 @@ const BestSellers = () => {
                 <h1 className="text-2xl md:text-3xl font-medium text-[#364152] mb-6 md:mb-8">Best Sellers</h1>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                    {randomProducts.map((data) => (
+                    {firstFiveProducts.map((data) => (
                         <div key={data.id} className="border-1 border-[#e1e3e6] rounded-md">
                             <div className="px-4 md:px-4 py-2">
                                 <div className="flex justify-center h-[90%]">
