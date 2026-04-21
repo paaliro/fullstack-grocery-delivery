@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { allProductsContent, stars } from "../assets/data";
 import { useMemo } from "react";
 import { useCartStore } from "../store/useCartStore";
+import CartButton from "./CartButton";
 
 const BestSellers = () => {
     const { addToCart, cart, updateQuantity } = useCartStore();
@@ -44,7 +45,7 @@ const BestSellers = () => {
                                             ₹{data.actualPrice}
                                             <small className="text-gray-500/60 line-through px-1">₹{data.oldPrice}</small>
                                         </p>
-                                        {quantity(data.id) === 0 ? (
+                                        {/* {quantity(data.id) === 0 ? (
                                             <button onClick={() => addToCart(data)} className="flex gap-0.5 md:gap-2 border border-[#feca65] px-1 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] cursor-pointer" >
                                                 <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-3 md:w-4" />
                                                 Add
@@ -55,7 +56,8 @@ const BestSellers = () => {
                                                 <span className="font-medium">{quantity(data.id)}</span>
                                                 <button onClick={() => updateQuantity(data.id, 1)} className="px-2 font-bold cursor-pointer" >+</button>
                                             </div>
-                                        )}
+                                        )} */}
+                                        <CartButton product={data} />
                                     </div>
                                 </div>
                             </div>
