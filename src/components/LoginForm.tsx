@@ -9,7 +9,7 @@ const LoginForm = () => {
     return (
         <form className="flex flex-col gap-4 m-auto items-start p-8 py-12 w-80 sm:w-[352px] text-gray-500 rounded-lg shadow-xl border border-gray-200 bg-white">
             <p className="text-2xl font-medium m-auto">
-                <span className="text-secondary-yellow">User</span> {state === "login" ? "Login" : "Sign Up"}
+                <span className="text-accent-strong">User</span> {state === "login" ? "Login" : "Sign Up"}
             </p>
             {state === "register" && (
                 <div className="w-full">
@@ -27,11 +27,11 @@ const LoginForm = () => {
             </div>
             {state === "register" ? (
                 <p>
-                    Already have account? <span onClick={() => setState("login")} className="text-secondary-yellow cursor-pointer">click here</span>
+                    Already have account? <span onClick={() => setState("login")} className="text-accent-strong cursor-pointer">click here</span>
                 </p>
             ) : (
                 <p>
-                    Create an account? <span onClick={() => setState("register")} className="text-secondary-yellow cursor-pointer">click here</span>
+                    Create an account? <span onClick={() => setState("register")} className="text-accent-strong cursor-pointer">click here</span>
                 </p>
             )}
             <button className="bg-accent transition-all text-white font-semibold w-full py-2 rounded-md cursor-pointer">

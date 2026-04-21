@@ -5,7 +5,7 @@ const PageNotFound = () => {
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-[#fbf4e4] to-white px-4">
             <div className="flex flex-col items-center justify-center text-center bg-white/70 backdrop-blur-md rounded-2xl shadow-xl p-10 max-w-xl w-full">
                 {/* Error Code */}
-                <p className="font-extrabold md:text-6xl text-4xl text-secondary-yellow mb-3">
+                <p className="font-extrabold md:text-6xl text-4xl text-accent-strong mb-3">
                     404
                 </p>
 

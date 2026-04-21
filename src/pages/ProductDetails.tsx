@@ -33,7 +33,7 @@ const ProductDetails = () => {
                 <p>
                     <Link to="/">Home</Link> /
                     <span> {product.categoryName}</span> /
-                    <span className="text-secondary-yellow"> {product.productName}</span>
+                    <span className="text-accent-strong"> {product.productName}</span>
                 </p>
 
                 <div className="flex flex-col md:flex-row gap-16 mt-4">

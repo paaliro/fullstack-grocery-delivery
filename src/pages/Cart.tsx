@@ -5,7 +5,7 @@ const Cart = () => {
         <div className="flex flex-col md:flex-row">
             <div className="max-w-4xl md:w-8/12 w-full">
                 <p className="text-3xl font-medium .text-brand">Shopping Cart
-                    <span className="px-0.5 text-secondary-yellow font-medium text-sm">0 items</span>
+                    <span className="px-0.5 text-accent-strong font-medium text-sm">0 items</span>
                 </p>
                 <div className="mt-6 grid grid-cols-[2fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
                     <p className="text-left">Product Details</p>
@@ -13,7 +13,7 @@ const Cart = () => {
                     <p className="text-center">Action</p>
                 </div>
                 <Link to="/products">
-                    <button className="group cursor-pointer text-secondary-yellow flex gap-2 mt-10 ml-2 font-medium">
+                    <button className="group cursor-pointer text-accent-strong flex gap-2 mt-10 ml-2 font-medium">
                         <img className="group-hover:-translate-x-1 transition" alt="arrow-img" src="/images/right-arrow.svg" />
                         Continue Shopping
                     </button>
@@ -27,7 +27,7 @@ const Cart = () => {
                     <p className="uppercase">Delivery Address</p>
                     <div className="flex justify-between mt-0.5 md:mt-1.5">
                         <p className="text-[#6b7181]">No address found</p>
-                        <button className="text-secondary-yellow text-lg hover:underline cursor-pointer">Change</button>
+                        <button className="text-accent-strong text-lg hover:underline cursor-pointer">Change</button>
                     </div>
                     <p className="uppercase mt-4">Payment Method</p>
                     <select className="w-full border border-gray-300 bg-white px-3 py-2 mt-2 outline-none" name="payment-methods" id="payment-methods">
@@ -42,7 +42,7 @@ const Cart = () => {
                         </p>
                         <p className="flex justify-between text-[#6b7181]">
                             <span>Shipping Fee</span>
-                            <span className="text-secondary-yellow">Free</span>
+                            <span className="text-accent-strong">Free</span>
                         </p>
                         <p className="flex justify-between text-[#6b7181]">
                             <span>Tax (2%)</span>
