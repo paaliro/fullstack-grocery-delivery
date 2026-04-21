@@ -92,11 +92,11 @@ const Navbar = () => {
                         <img src="/images/search_icon.svg" alt="search-icon" />
                     </div>
                     <div className="relative inline-block">
-                        <button className="absolute -top-1.5 right-0 left-5 bg-secondary text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">{cartCount}</button>
+                        <button className="absolute -top-1.5 right-0 left-5 bg-accent text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">{cartCount}</button>
                         <Link to="/cart"><img src="/images/nav_cart_icon.svg" alt="cart-icon" className="w-[30px] cursor-pointer" /></Link>
                     </div>
                     <button onClick={() => setShowLogin(true)}
-                        className="md:px-2 lg:px-7 md:py-1 lg:py-1.5 bg-secondary md:rounded-2xl lg:rounded-3xl text-white cursor-pointer md:font-semibold lg:font-bold md:text-sm lg:text-base">Login</button>
+                        className="md:px-2 lg:px-7 md:py-1 lg:py-1.5 bg-accent md:rounded-2xl lg:rounded-3xl text-white cursor-pointer md:font-semibold lg:font-bold md:text-sm lg:text-base">Login</button>
                 </div>
 
                 {/* Modal (LoginForm Component) */}

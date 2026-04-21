@@ -33,7 +33,7 @@ const ProductDetails = () => {
                 <p>
                     <Link to="/">Home</Link> /
                     <span> {product.categoryName}</span> /
-                    <span className="text-secondary"> {product.productName}</span>
+                    <span className="text-secondary-yellow"> {product.productName}</span>
                 </p>
 
                 <div className="flex flex-col md:flex-row gap-16 mt-4">
@@ -78,7 +78,7 @@ const ProductDetails = () => {
                             <button className="w-full py-3.5 cursor-pointer font-medium bg-gray-100 text-gray-800/80 hover:bg-gray-200 transition">
                                 Add to Cart
                             </button>
-                            <button className="w-full py-3.5 cursor-pointer font-medium bg-secondary text-white transition">
+                            <button className="w-full py-3.5 cursor-pointer font-medium bg-accent text-white transition">
                                 Buy now
                             </button>
                         </div>

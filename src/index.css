@@ -11,18 +11,22 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-.text-primary {
+.text-brand {
   color: #364152;
 }
 
-.text-secondary {
+.text-accent {
+  color: #feca65;
+}
+
+.text-accent-strong {
   color: #fdb81d;
 }
 
-.bg-secondary {
+.bg-accent {
   background-color: #fdb81d;
 }
 
-.bg-secondary:hover {
-  background-color: #e5a938; /* darker shade */
+.bg-accent:hover {
+  background-color: #e5a938;
 }

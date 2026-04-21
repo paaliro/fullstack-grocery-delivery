@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="px-6 md:px-24">
-            <p className="border-t-1 border-gray-500/40 text-center py-3 md:py-4 text-[#364152] text-sm md:text-md">Copyright © 2025 <span className="text-primary font-medium">Parveen Kumar</span> — All Rights Reserved.</p>
+            <p className="border-t-1 border-gray-500/40 text-center py-3 md:py-4 text-[#364152] text-sm md:text-md">Copyright © 2025 <span className=".text-brand font-medium">Parveen Kumar</span> — All Rights Reserved.</p>
         </div>
     </section>
 };
