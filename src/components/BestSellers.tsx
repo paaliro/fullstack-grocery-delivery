@@ -1,23 +1,15 @@
 import { Link } from "react-router-dom";
 import { allProductsContent, stars } from "../assets/data";
 import { useMemo } from "react";
-import { useCartStore } from "../store/useCartStore";
 import CartButton from "./CartButton";
 
 const BestSellers = () => {
-    const { addToCart, cart, updateQuantity } = useCartStore();
 
     // Randomly shuffle the products and select the first 5 for display
     const firstFiveProducts = useMemo(() => {
         return allProductsContent.slice(0, 5);
     }, [allProductsContent]);
 
-    const getQuantity = (id: string) => {
-        const item = cart.find((foodItem) => foodItem.id === id);
-        return item ? item.quantity : 0;
-    };
-
-    const quantity = (id: string) => getQuantity(id);
     return (
         <section className="px-6 md:px-24 mt-14 md:mt-16 mb-4 md:mb-5">
             <div>
@@ -45,18 +37,6 @@ const BestSellers = () => {
                                             ₹{data.actualPrice}
                                             <small className="text-gray-500/60 line-through px-1">₹{data.oldPrice}</small>
                                         </p>
-                                        {/* {quantity(data.id) === 0 ? (
-                                            <button onClick={() => addToCart(data)} className="flex gap-0.5 md:gap-2 border border-[#feca65] px-1 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] cursor-pointer" >
-                                                <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-3 md:w-4" />
-                                                Add
-                                            </button>
-                                        ) : (
-                                            <div className="flex items-center gap-1 border border-[#feca65] px-1 md:px-2 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65]">
-                                                <button onClick={() => updateQuantity(data.id, -1)} className="px-2 font-bold cursor-pointer">-</button>
-                                                <span className="font-medium">{quantity(data.id)}</span>
-                                                <button onClick={() => updateQuantity(data.id, 1)} className="px-2 font-bold cursor-pointer" >+</button>
-                                            </div>
-                                        )} */}
                                         <CartButton product={data} />
                                     </div>
                                 </div>
