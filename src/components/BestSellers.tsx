@@ -33,7 +33,7 @@ const BestSellers = () => {
                                     </div>
 
                                     <div className="flex justify-between pt-3">
-                                        <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
+                                        <p className="text-sm md:text-xl lg:2xl font-semibold text-accent">
                                             ₹{data.actualPrice}
                                             <small className="text-gray-500/60 line-through px-1">₹{data.oldPrice}</small>
                                         </p>

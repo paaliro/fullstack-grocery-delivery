@@ -15,7 +15,7 @@ const CartButton = ({ product }: Props) => {
 
     return quantity === 0 ? (
         <button onClick={() => addToCart(product)}
-            className="flex gap-0.5 md:gap-2 border border-[#feca65] px-1 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] cursor-pointer" >
+            className="flex text-xs md:text-base gap-0.5 md:gap-2 border border-[#feca65] px-1 md:px-3 py-0.5 rounded-sm bg-[#fff7e7] text-[#feca65] cursor-pointer" >
             <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-3 md:w-4"/>
             Add
         </button>

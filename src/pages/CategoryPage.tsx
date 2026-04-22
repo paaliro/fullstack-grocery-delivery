@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import type { Product } from "../assets/interface";
 import { filterByCategory, stars, categoriesData } from "../assets/data";
+import CartButton from "../components/CartButton";
 
 const CategoryPage = () => {
     const { categoryName } = useParams<{ categoryName: string }>(); // slug from URL
@@ -39,17 +40,14 @@ const CategoryPage = () => {
                                             <p className="text-gray-500/60 text-sm">(4)</p>
                                         </div>
 
-                                        <div className="flex justify-between items-baseline pt-3">
+                                        <div className="flex justify-between pt-3">
                                             <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
                                                 ₹{data.actualPrice}
                                                 <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">
                                                     ₹{data.oldPrice}
                                                 </span>
                                             </p>
-                                            <button className="flex gap-0.5 md:gap-2 border-1 text-xs md:text-lg border-[#feca65] px-1 md:px-3 py-0.5 rounded-md bg-[#fff7e7] text-[#feca65] font-normal cursor-pointer">
-                                                <img src="/images/updated-svg/cart_icon.svg" alt="cart-icon" className="w-3 md:w-4" />
-                                                Add
-                                            </button>
+                                            <CartButton product={data} />
                                         </div>
                                     </div>
                                 </div>
