@@ -9,11 +9,13 @@ import ScrollToTop from "./components/ScrollToTop";
 import { SearchProvider } from "./context/SearchContext";
 import PageNotFound from "./pages/PageNotFound";
 import ProductDetails from "./pages/ProductDetails";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <SearchProvider>
       <Router>
+        <Toaster />
         <ScrollToTop />
         <Navbar />
 
