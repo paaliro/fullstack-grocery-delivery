@@ -2,7 +2,7 @@ import { useState, useContext, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { SearchContext } from "../context/SearchContext";
 import LoginForm from "./LoginForm";
-import { useCartStore } from "../store/useCartStore"; 
+import { useCartStore } from "../store/useCartStore";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
