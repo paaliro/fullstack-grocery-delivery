@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { allProductsContent, stars } from "../assets/data";
 import { SearchContext } from "../context/SearchContext";
+import CartButton from "../components/CartButton";
 
 const Products: React.FC = () => {
     const { searchTerm, setSearchTerm } = useContext(SearchContext); // get searchTerm from context
@@ -30,71 +31,68 @@ const Products: React.FC = () => {
             {/* render products */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4.5 py-5 md:pb-10 md:py-0">
                 {filteredProducts.map((data) => (
-                    <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
-                        <div className="border-1 border-[#e1e3e6] rounded-md">
-                            <div className="px-4 md:px-4 py-2">
-                                <div className="flex justify-center">
+
+                    <div className="border-1 border-[#e1e3e6] rounded-md">
+                        <div className="px-4 md:px-4 py-2">
+                            <div className="flex justify-center">
+                                <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
                                     <img
                                         src={data.imgPath}
                                         alt="items-img"
                                         className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105"
                                     />
+                                </Link>
+                            </div>
+                            <div>
+                                <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>
+                                <p className="font-medium text-sm md:text-lg">{data.productName}</p>
+                                <div className="flex gap-0.5">
+                                    {stars.map((src, index) => (
+                                        <img key={index} src={src} alt="star-img" className="w-3" />
+                                    ))}
+                                    <p className="text-gray-500/60 text-xs">(4)</p>
                                 </div>
-                                <div>
-                                    <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>
-                                    <p className="font-medium text-sm md:text-lg">{data.productName}</p>
-                                    <div className="flex gap-0.5">
-                                        {stars.map((src, index) => (
-                                            <img key={index} src={src} alt="star-img" className="w-3" />
-                                        ))}
-                                        <p className="text-gray-500/60 text-xs">(4)</p>
-                                    </div>
 
-                                    <div className="flex justify-between items-baseline pt-3">
-                                        <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
-                                            ₹{data.actualPrice}
-                                            <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">
-                                                ₹{data.oldPrice}
-                                            </span>
-                                        </p>
-                                        <button className="flex gap-0.5 md:gap-2 border-1 text-xs md:text-lg border-[#feca65] px-1 md:px-3 py-0.5 rounded-xs md:rounded-sm bg-[#fff7e7] text-[#feca65] font-normal cursor-pointer">
-                                            <img
-                                                src="/images/updated-svg/cart_icon.svg"
-                                                alt="cart-icon"
-                                                className="w-2.5 md:w-4"
-                                            />
-                                            Add
-                                        </button>
-                                    </div>
+                                <div className="flex justify-between items-baseline pt-3">
+                                    <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
+                                        ₹{data.actualPrice}
+                                        <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">
+                                            ₹{data.oldPrice}
+                                        </span>
+                                    </p>
+                                    <CartButton product={data}/>
                                 </div>
                             </div>
                         </div>
-                    </Link>
+                    </div>
+
                 ))}
             </div>
 
             {/* show message if no product */}
-            {filteredProducts.length === 0 && (
-                <div className="flex flex-col items-center justify-center min-h-[60vh] text-center mb-14 md:mb-20">
-                    <img
-                        src="/images/empty-state.jpg"
-                        alt="No products"
-                        className="w-24 md:w-40 mb-4 opacity-80"
-                    />
-                    <h2 className="text-lg md:text-2xl font-semibold text-[#364152]">
-                        No products found in this category
-                    </h2>
-                    <p className="text-sm md:text-base text-gray-500 mt-2">
-                        Please check other categories or come back later.
-                    </p>
-                    <a
-                        href="/#"
-                        onClick={handleBrowseAll}
-                        className="mt-6 inline-block px-4 py-2 bg-[#feca65] text-white rounded-md shadow hover:bg-[#e5b755] transition-colors">Browse All Categories
-                    </a>
-                </div>
-            )}
-        </section>
+            {
+                filteredProducts.length === 0 && (
+                    <div className="flex flex-col items-center justify-center min-h-[60vh] text-center mb-14 md:mb-20">
+                        <img
+                            src="/images/empty-state.jpg"
+                            alt="No products"
+                            className="w-24 md:w-40 mb-4 opacity-80"
+                        />
+                        <h2 className="text-lg md:text-2xl font-semibold text-[#364152]">
+                            No products found in this category
+                        </h2>
+                        <p className="text-sm md:text-base text-gray-500 mt-2">
+                            Please check other categories or come back later.
+                        </p>
+                        <a
+                            href="/#"
+                            onClick={handleBrowseAll}
+                            className="mt-6 inline-block px-4 py-2 bg-[#feca65] text-white rounded-md shadow hover:bg-[#e5b755] transition-colors">Browse All Categories
+                        </a>
+                    </div>
+                )
+            }
+        </section >
     );
 };
 
