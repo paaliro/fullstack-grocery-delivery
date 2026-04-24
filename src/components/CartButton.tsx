@@ -21,9 +21,9 @@ const CartButton = ({ product }: Props) => {
         </button>
     ) : (
         <div className="flex items-center gap-1 border border-[#feca65] px-1 md:px-2 py-0.5 rounded-md bg-[#fff7e7] text-accent-strong">
-            <button onClick={() => updateQuantity(product.id, -1)} className="px-2 font-bold cursor-pointer" >−</button>
-            <span className="font-medium">{quantity}</span>
-            <button onClick={() => updateQuantity(product.id, 1)} className="px-2 font-bold cursor-pointer">+</button>
+            <button onClick={() => updateQuantity(product.id, -1)} className="px-2 text-xs md:text-xl font-bold cursor-pointer" >−</button>
+            <span className="text-xs md:text-xl font-medium">{quantity}</span>
+            <button onClick={() => updateQuantity(product.id, 1)} className="px-2 text-xs md:text-xl font-bold cursor-pointer">+</button>
         </div >
     );
 };
