@@ -53,7 +53,7 @@ const Products: React.FC = () => {
                                     <p className="text-gray-500/60 text-xs">(4)</p>
                                 </div>
 
-                                <div className="flex justify-between items-baseline pt-3">
+                                <div className="flex justify-between pt-3">
                                     <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
                                         ₹{data.actualPrice}
                                         <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">
