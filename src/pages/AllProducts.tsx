@@ -33,7 +33,7 @@ const Products: React.FC = () => {
                 {filteredProducts.map((data) => (
 
                     <div className="border-1 border-[#e1e3e6] rounded-md">
-                        <div className="px-4 md:px-4 py-2">
+                        <div className="px-3 md:px-4 py-2">
                             <div className="flex justify-center">
                                 <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
                                     <img
