@@ -32,37 +32,80 @@ const Products: React.FC = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4.5 py-5 md:pb-10 md:py-0">
                 {filteredProducts.map((data) => (
 
-                    <div className="border-1 border-[#e1e3e6] rounded-md">
-                        <div className="px-3 md:px-4 py-2">
-                            <div className="flex justify-center">
-                                <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
-                                    <img
-                                        src={data.imgPath}
-                                        alt="items-img"
-                                        className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105"
-                                    />
-                                </Link>
-                            </div>
-                            <div>
-                                <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>
-                                <p className="font-medium text-sm md:text-lg">{data.productName}</p>
-                                <div className="flex gap-0.5">
-                                    {stars.map((src, index) => (
-                                        <img key={index} src={src} alt="star-img" className="w-3" />
-                                    ))}
-                                    <p className="text-gray-500/60 text-xs">(4)</p>
-                                </div>
+                    // <div className="border-1 border-[#e1e3e6] rounded-md">
+                    //     <div className="px-3 md:px-4 py-2">
+                    //         <div className="flex justify-center">
+                    //             <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
+                    //                 <img
+                    //                     src={data.imgPath}
+                    //                     alt="items-img"
+                    //                     className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105"
+                    //                 />
+                    //             </Link>
+                    //         </div>
+                    //         <div>
+                    //             <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>
+                    //             <p className="font-medium text-sm md:text-lg">{data.productName}</p>
+                    //             <div className="flex gap-0.5">
+                    //                 {stars.map((src, index) => (
+                    //                     <img key={index} src={src} alt="star-img" className="w-3" />
+                    //                 ))}
+                    //                 <p className="text-gray-500/60 text-xs">(4)</p>
+                    //             </div>
 
-                                <div className="flex justify-between pt-3">
-                                    <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
-                                        ₹{data.actualPrice}
-                                        <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">
-                                            ₹{data.oldPrice}
-                                        </span>
-                                    </p>
-                                    <CartButton product={data}/>
+                    //             <div className="flex justify-between pt-3">
+                    //                 <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
+                    //                     ₹{data.actualPrice}
+                    //                     <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">
+                    //                         ₹{data.oldPrice}
+                    //                     </span>
+                    //                 </p>
+                    //                 <CartButton product={data}/>
+                    //             </div>
+                    //         </div>
+                    //     </div>
+                    // </div>
+
+                    <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition">
+
+                        {/* CLICKABLE AREA */}
+                        <Link
+                            to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}
+                            className="block p-3 sm:p-4"
+                        >
+                            <div className="flex justify-center items-center aspect-square">
+                                <img
+                                    src={data.imgPath}
+                                    alt={data.productName}
+                                    className="w-full max-w-[140px] object-contain"
+                                />
+                            </div>
+
+                            <div className="mt-2 space-y-1">
+                                <p className="text-gray-500 text-xs">{data.categoryName}</p>
+                                <p className="font-medium text-sm line-clamp-2">
+                                    {data.productName}
+                                </p>
+
+                                <div className="flex items-center gap-1">
+                                    {stars.map((src, index) => (
+                                        <img key={index} src={src} alt="star" className="w-3" />
+                                    ))}
+                                    <span className="text-gray-400 text-xs">(4)</span>
                                 </div>
                             </div>
+                        </Link>
+
+                        {/* NON-NAVIGATING AREA */}
+                        <div className="flex items-center justify-between px-3 pb-3">
+                            <p className="text-base sm:text-lg md:text-xl font-bold text-[#feca65] leading-tight">
+                                ₹{data.actualPrice}
+                                <span className="block sm:inline text-xs sm:text-sm font-normal text-gray-400 line-through sm:ml-2">
+                                    ₹{data.oldPrice}
+                                </span>
+                            </p>
+
+                            <CartButton product={data} />
                         </div>
                     </div>
 
