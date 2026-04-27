@@ -32,40 +32,6 @@ const Products: React.FC = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4.5 py-5 md:pb-10 md:py-0">
                 {filteredProducts.map((data) => (
 
-                    // <div className="border-1 border-[#e1e3e6] rounded-md">
-                    //     <div className="px-3 md:px-4 py-2">
-                    //         <div className="flex justify-center">
-                    //             <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
-                    //                 <img
-                    //                     src={data.imgPath}
-                    //                     alt="items-img"
-                    //                     className="max-w-28 md:max-w-38 h-30 md:h-fit cursor-pointer transform transition-transform duration-300 hover:scale-105"
-                    //                 />
-                    //             </Link>
-                    //         </div>
-                    //         <div>
-                    //             <p className="text-gray-500/60 text-xs md:text-sm">{data.categoryName}</p>
-                    //             <p className="font-medium text-sm md:text-lg">{data.productName}</p>
-                    //             <div className="flex gap-0.5">
-                    //                 {stars.map((src, index) => (
-                    //                     <img key={index} src={src} alt="star-img" className="w-3" />
-                    //                 ))}
-                    //                 <p className="text-gray-500/60 text-xs">(4)</p>
-                    //             </div>
-
-                    //             <div className="flex justify-between pt-3">
-                    //                 <p className="text-sm md:text-xl lg:2xl font-semibold text-[#feca65]">
-                    //                     ₹{data.actualPrice}
-                    //                     <span className="text-xs md:text-sm text-gray-500/60 line-through px-1">
-                    //                         ₹{data.oldPrice}
-                    //                     </span>
-                    //                 </p>
-                    //                 <CartButton product={data}/>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // </div>
-
                     <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition">
 
                         {/* CLICKABLE AREA */}
