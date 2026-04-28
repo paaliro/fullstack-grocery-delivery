@@ -20,9 +20,9 @@ const CartButton = ({ product }: Props) => {
             Add
         </button>
     ) : (
-        <div className="flex items-center gap-1 border border-[#feca65] px-0 md:px-2 py-0.5 rounded-md bg-[#fff7e7] text-accent-strong">
+        <div className="flex items-center gap-1 border border-[#feca65] px-0 md:px-2 rounded-md bg-[#fff7e7] text-accent-strong">
             <button onClick={() => updateQuantity(product.id, -1)} className="px-2 text-xs md:text-xl font-bold cursor-pointer" >−</button>
-            <span className="text-xs md:text-xl font-medium">{quantity}</span>
+            <span className="text-xs md:text-base">{quantity}</span>
             <button onClick={() => updateQuantity(product.id, 1)} className="px-2 text-xs md:text-xl font-bold cursor-pointer">+</button>
         </div >
     );
