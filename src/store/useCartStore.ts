@@ -31,7 +31,7 @@ export const useCartStore = create<CartStore>()(
             };
           }
 
-          showToast("success", "Added to cart 🛒");
+          showToast("success", "Added to cart");
           return {
             cart: [...state.cart, { ...item, quantity: 1 }],
           };
@@ -50,9 +50,9 @@ export const useCartStore = create<CartStore>()(
         if (newQty <= 0) {
           showToast("error", "Item removed");
         } else if (amount > 0) {
-          showToast("success", "Quantity increased ➕");
+          showToast("success", "Quantity increased");
         } else {
-          showToast("success", "Quantity decreased ➖");
+          showToast("success", "Quantity decreased");
         }
 
         // Update state
