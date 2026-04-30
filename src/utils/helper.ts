@@ -2,7 +2,7 @@ import toast from "react-hot-toast";
 
 export const notify = (message: string, icon?: string) =>
   toast(message, {
-    duration: 4000,
+    duration: 2000,
     position: "top-center",
 
     // Styling
@@ -25,7 +25,7 @@ export const notify = (message: string, icon?: string) =>
     },
 
     // Additional Configuration
-    removeDelay: 1000,
+    // removeDelay: 1000,c
 
     // Toaster instance
     toasterId: "default",

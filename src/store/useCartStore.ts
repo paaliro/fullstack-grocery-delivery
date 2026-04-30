@@ -24,6 +24,7 @@ export const useCartStore = create<CartStore>()(
           const existing = state.cart.find((i) => i.id === item.id);
 
           if (existing) {
+            showToast("success", "Quantity increased");
             return {
               cart: state.cart.map((i) =>
                 i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i,
