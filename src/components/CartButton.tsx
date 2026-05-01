@@ -8,7 +8,7 @@ type Props = {
 };
 
 const CartButton = ({ product }: Props) => {
-    const { cart, addToCart, updateQuantity } = useCartStore();
+    const { cart, addToCart, updateQuantity } = useCartStore();  
 
     const item = cart.find((i) => i.id === product.id);
     const quantity = item?.quantity || 0;
