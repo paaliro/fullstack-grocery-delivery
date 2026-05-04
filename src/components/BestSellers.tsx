@@ -17,7 +17,7 @@ const BestSellers = () => {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                     {firstFiveProducts.map((data) => (
-                        <div key={data.id} className="border-1 border-[#e1e3e6] rounded-md">
+                        <div key={data.id} className="border-1 border-[#e1e3e6] rounded-md overflow-hidden hover:shadow-md transition">
                             <div className="px-4 md:px-4 py-2">
                                 <div className="flex justify-center h-[90%]">
                                     <Link key={data.id} to={`/products/${data.categoryName.toLowerCase()}/${data.id}`}>
