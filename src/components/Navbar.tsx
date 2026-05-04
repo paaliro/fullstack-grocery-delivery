@@ -39,7 +39,6 @@ const Navbar = () => {
     }, [menuOpen]);
 
     const cart = useCartStore((state) => state.cart);
-
     const cartCount = cart.reduce(
         (sum, item) => sum + item.quantity,
         0

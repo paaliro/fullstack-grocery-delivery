@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
+import { useCartStore } from "../store/useCartStore";
 
 const Cart = () => {
+    const cart = useCartStore((state) => state.cart);
+    const cartCount = cart.reduce(
+        (sum, item) => sum + item.quantity,
+        0
+    );
+
     return <section className="px-4 md:px-22 my-15 md:my-20">
         <div className="flex flex-col md:flex-row">
             <div className="max-w-4xl md:w-8/12 w-full">
                 <p className="text-3xl font-medium .text-brand">Shopping Cart
-                    <span className="px-0.5 text-accent-strong font-medium text-sm">0 items</span>
+                    <span className="px-0.5 text-accent-strong font-medium text-sm">{cartCount} items</span>
                 </p>
                 <div className="mt-6 grid grid-cols-[2fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
                     <p className="text-left">Product Details</p>
